@@ -67,16 +67,16 @@ function changeText(){
     // var questionsDiv = document.getElementById('Questions');
 	// var questionNodes = questionsDiv.childNodes;
     var questions = document.getElementsByClassName("QuestionText");
-    params = getAllUrlParams();
-    env = params.env;
+    var params = getAllUrlParams();
+    var env = params.env;
     questions[0].innerHTML = "Param env is " + env + " (fromS3 via GitHub and CodePipeline)";
 }
 
-function loadJS(){
-    filename = "https://qualtrics-config.s3-eu-west-1.amazonaws.com/dev/sample.js"
-    var script = document.createElement("script");  // create a script DOM node
-    script.src = filename;  // set its src to the provided URL
-    script.type = "text/javascript"
-    script.mimeType = "text/javascript"
-    document.head.appendChild(script);  // add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
-}
+// function loadJS(){
+//     filename = "https://qualtrics-config.s3-eu-west-1.amazonaws.com/dev/sample.js"
+//     var script = document.createElement("script");  // create a script DOM node
+//     script.src = filename;  // set its src to the provided URL
+//     script.type = "text/javascript"
+//     script.mimeType = "text/javascript"
+//     document.head.appendChild(script);  // add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
+// }

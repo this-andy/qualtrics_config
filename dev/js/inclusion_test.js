@@ -69,7 +69,7 @@ function changeText(){
     var questions = document.getElementsByClassName("QuestionText");
     var params = getAllUrlParams();
     var env = params.env;
-    questions[0].innerHTML = "Param env is " + env + " (from S3 via GitHub and CodePipeline)";
+    questions[0].innerHTML = "Param env is " + env + " (from S3(public) via GitHub and CodePipeline)";
 }
 
 // function loadJS(){

@@ -69,7 +69,7 @@ function changeText(){
     var questions = document.getElementsByClassName("QuestionText");
     params = getAllUrlParams();
     env = params.env;
-    questions[0].innerHTML = "Param env is " + env;
+    questions[0].innerHTML = "Param env is " + env + " (fromS3 via GitHub and CodePipeline)";
 }
 
 function loadJS(){

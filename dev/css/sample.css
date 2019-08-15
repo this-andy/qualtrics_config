@@ -49,43 +49,6 @@
     background-color: var(--this-pale-blue);
 }
 
-.nextPageButton {
-    border: 2px solid;
-    border-color: var(--this-pale-blue);
-    border-radius: 300px;
-    padding: 10px 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: small;
-    transition: all 150ms linear;
-}
-
-.nextPageButton:hover {
-    color: white;
-    background-color: var(--this-pale-blue);
-}
-
-.previousPageButton {
-    border: 2px solid;
-    border-color: var(--this-pale-blue);
-    border-radius: 300px;
-    padding: 10px 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: small;
-    transition: all 150ms linear;
-}
-
-.previousPageButton:hover {
-    color: white;
-    background-color: var(--this-pale-blue);
-}
 /* this next lot overrides Qualtrics defaults */
 
 .QuestionBody img {

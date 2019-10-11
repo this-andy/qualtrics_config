@@ -120,3 +120,11 @@
     border-style: solid;
     color: var(--this-pale-blue);
 }
+
+/* Rubber Cheese overrides */
+
+.JFEScope #SurveyEngineBody {
+    height: auto;
+}
+
+/* end of Rubber Cheese overrides */

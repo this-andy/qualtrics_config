@@ -127,7 +127,7 @@
     height: auto;
 }
 
-body {
+body#SurveyEngineBody {
     background: #efefee;
 }
 

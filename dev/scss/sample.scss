@@ -8,7 +8,8 @@
   --this-green: rgb(0, 187, 126);
   --this-pink: rgb(232, 156, 174);
   --this-aubergine: rgb(108, 29, 69);
-  --this-yellow: rgb(255, 198, 88); }
+  --this-yellow: rgb(255, 198, 88);
+}
 
 .NextButton {
   border: 2px solid;
@@ -21,13 +22,13 @@
   text-decoration: none;
   display: inline-block;
   font-size: small;
-  -webkit-transition: all 150ms linear;
-  -o-transition: all 150ms linear;
-  transition: all 150ms linear; }
+  transition: all 150ms linear;
+}
 
 .NextButton:hover {
   color: white;
-  background-color: var(--this-pale-blue); }
+  background-color: var(--this-pale-blue);
+}
 
 .PreviousButton {
   border: 2px solid;
@@ -40,60 +41,75 @@
   text-decoration: none;
   display: inline-block;
   font-size: small;
-  -webkit-transition: all 150ms linear;
-  -o-transition: all 150ms linear;
-  transition: all 150ms linear; }
+  transition: all 150ms linear;
+}
 
 .PreviousButton:hover {
   color: white;
-  background-color: var(--this-pale-blue); }
+  background-color: var(--this-pale-blue);
+}
 
 /* this next lot overrides Qualtrics defaults */
+
 .QuestionBody img {
-  height: 300px !important; }
+  height: 300px !important;
+}
 
 .Skin button, .Skin input {
-  font-size: small; }
+  font-size: small;
+}
 
 .Skin .TE .ML textarea {
-  height: 2.5em; }
+  height: 2.5em;
+}
 
 .Skin #Buttons {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
 .Skin .QuestionText {
   font-size: small;
-  padding: 10px 10px 0px 10px; }
+  padding: 10px 10px 0px 10px;
+}
 
 .Skin .QuestionBody {
   font-size: small;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+}
 
 .Skin .SkinInner {
-  padding-top: 0; }
+  padding-top: 0;
+}
 
 .Skin #Plug {
   text-align: center;
   font-size: smaller;
-  background-color: var(--this-light-grey); }
+  background-color: var(--this-light-grey);
+}
 
 .Skin #Plug a {
-  color: var(--this-dark-grey); }
+  color: var(--this-dark-grey);
+}
 
 .Skin #PushStickyFooter {
-  height: 0; }
+  height: 0;
+}
 
 /*  validation error text */
 .Skin .ValidationError {
   text-align: left;
-  padding: 10px 0px 5px 10px; }
+  padding: 10px 0px 5px 10px;
+}
 
 #ProgressBar {
-  padding: 0; }
+  padding: 0;
+}
 
 /* end of Qualtrics overrides */
+
 #THISlogo {
-  height: 40px !important; }
+  height: 40px !important;
+}
 
 #LogoLine {
   margin-top: 0.5em;
@@ -102,24 +118,35 @@
   margin-right: auto;
   border-width: 0.1em;
   border-style: solid;
-  color: var(--this-pale-blue); }
+  color: var(--this-pale-blue);
+}
 
 /* Rubber Cheese overrides */
+
 .JFEScope #SurveyEngineBody {
-  height: auto; }
+  height: auto;
+}
 
 body#SurveyEngineBody {
-  background: #efefee; }
+  background: #efefee;
+}
 
-.Skin #ProgressBar {
-  background: #fff;
-  width: 100%;
-  max-width: 100%;
-  margin: 0; }
+.Skin {
 
-@media (min-width: 770px) {
-  .Skin .SkinInner {
+  #ProgressBar {
+    background: #fff;
     width: 100%;
-    max-width: 100%; } }
+    max-width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: 770px) {
+    .SkinInner {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
 
 /* end of Rubber Cheese overrides */

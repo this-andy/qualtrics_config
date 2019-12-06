@@ -1,3 +1,50 @@
+@font-face {
+  font-family:"Brown-Regular";
+  src:url("https://www.thiscovery.org/fonts/Brown-Regular.woff2") format("woff2"),url("https://www.thiscovery.org/fonts/Brown-Regular.woff") format("woff"),url("https://www.thiscovery.org/fonts/Brown-Regular.otf") format("opentype");
+  font-style:normal;font-weight:400;
+}
+
+$font-regular: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+@font-face {
+  font-family:"Brown-Bold";
+  src:url("https://www.thiscovery.org/fonts/Brown-Bold.woff2") format("woff2"),url("https://www.thiscovery.org/fonts/Brown-Bold.woff") format("woff"),url("https://www.thiscovery.org/fonts/Brown-Bold.otf") format("opentype");
+  font-style:normal;font-weight:400;
+}
+
+$font-bold: "Brown-Bold", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+@font-face {
+  font-family:"Brown-Light";
+  src:url("https://www.thiscovery.org/fonts/Brown-Light.woff2") format("woff2"),url("https://www.thiscovery.org/fonts/Brown-Light.woff") format("woff"),url("https://www.thiscovery.org/fonts/Brown-Light.otf") format("opentype");
+  font-style:normal;font-weight:400;
+}
+
+$font-light: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+$color-black: #3a3c42;
+$color-yellow: #ffd959;
+$color-red: #dd0031;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: $font-regular;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: $color-black;
+}
+
+body#SurveyEngineBody {
+  font-family: $font-regular;
+  color: $color-black;
+}
+
 /* define official THIS colours */
 :root {
   --this-dark-grey: rgb(83, 86, 90);
@@ -8,117 +55,7 @@
   --this-green: rgb(0, 187, 126);
   --this-pink: rgb(232, 156, 174);
   --this-aubergine: rgb(108, 29, 69);
-  --this-yellow: rgb(255, 198, 88);
-}
-
-.NextButton {
-  border: 2px solid;
-  border-color: var(--this-pale-blue);
-  border-radius: 300px;
-  padding: 10px 25px;
-  margin-left: 10px;
-  margin-right: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: small;
-  transition: all 150ms linear;
-}
-
-.NextButton:hover {
-  color: white;
-  background-color: var(--this-pale-blue);
-}
-
-.PreviousButton {
-  border: 2px solid;
-  border-color: var(--this-pale-blue);
-  border-radius: 300px;
-  padding: 10px 25px;
-  margin-left: 10px;
-  margin-right: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: small;
-  transition: all 150ms linear;
-}
-
-.PreviousButton:hover {
-  color: white;
-  background-color: var(--this-pale-blue);
-}
-
-/* this next lot overrides Qualtrics defaults */
-
-.QuestionBody img {
-  height: 300px !important;
-}
-
-.Skin button, .Skin input {
-  font-size: small;
-}
-
-.Skin .TE .ML textarea {
-  height: 2.5em;
-}
-
-.Skin #Buttons {
-  margin-top: 0;
-}
-
-.Skin .QuestionText {
-  font-size: small;
-  padding: 10px 10px 0px 10px;
-}
-
-.Skin .QuestionBody {
-  font-size: small;
-  padding-bottom: 0;
-}
-
-.Skin .SkinInner {
-  padding-top: 0;
-}
-
-.Skin #Plug {
-  text-align: center;
-  font-size: smaller;
-  background-color: var(--this-light-grey);
-}
-
-.Skin #Plug a {
-  color: var(--this-dark-grey);
-}
-
-.Skin #PushStickyFooter {
-  height: 0;
-}
-
-/*  validation error text */
-.Skin .ValidationError {
-  text-align: left;
-  padding: 10px 0px 5px 10px;
-}
-
-#ProgressBar {
-  padding: 0;
-}
-
-/* end of Qualtrics overrides */
-
-#THISlogo {
-  height: 40px !important;
-}
-
-#LogoLine {
-  margin-top: 0.5em;
-  margin-bottom: 0.1em;
-  margin-left: auto;
-  margin-right: auto;
-  border-width: 0.1em;
-  border-style: solid;
-  color: var(--this-pale-blue);
+  --this-yellow: $color-yellow;
 }
 
 /* Rubber Cheese overrides */
@@ -127,18 +64,146 @@
   height: auto;
 }
 
-body#SurveyEngineBody {
-  background: #efefee;
-}
-
 .Skin {
+  font-family: $font-regular;
+  font-size: 16px;
+  line-height: 26px;
+  color: #3a3c42;
 
   #ProgressBar {
     background: #fff;
     width: 100%;
     max-width: 100%;
     margin: 0;
+    padding: 15px;
+
+    table {
+      width: 100%;
+      max-width: 1185px;
+    }
+
+    .ProgressBarFillContainer {
+      height: 10px;
+      border-radius: 5px;
+      background: #d2d4d4;
+    }
+    tr {
+      td {
+        &:first-child {
+          color: $color-black;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.63;
+          padding-right: 10px;
+
+          &+ td + td {
+            color: $color-black;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.63;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+
+    .ProgressBarFill {
+      background-color: $color-yellow;
+      height: 10px;
+      border-radius: 5px;
+    }
   }
+
+  #Questions {
+    overflow: visible;
+  }
+
+  .QuestionOuter {
+    overflow: visible;
+  }
+
+  .DB {
+    .QuestionText {
+      font-family: $font-bold;
+      font-size: 24px;
+      font-weight: bold;
+      color: $color-black;
+      line-height: 1.29;
+      padding: 0;
+      margin: 0 0 30px 0;
+
+      div {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $font-regular;
+        color: $color-black;
+        line-height: 1.63;
+      }
+
+      li {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $font-regular;
+        color: $color-black;
+        line-height: 1.63;
+      }
+    }
+  }
+
+  .QuestionText {
+    font-family: $font-bold;
+    font-size: 24px;
+    font-weight: bold;
+    color: $color-black;
+    line-height: 1.29;
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+
+  #SkinContent {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 100px 20px;
+  }
+
+  .QuestionBody {
+    color: $color-black;
+    font-size: 16px;
+    line-height: 1.63;
+    overflow: visible;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto !important;
+      border-radius: 6px;
+    }
+  }
+
+  label.MultipleAnswer, label.SingleAnswer {
+    background: #fefefe;
+    border-radius: 6px;
+
+    span {
+      opacity: 0.8;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+      background: #fff;
+    }
+  }
+
+  .MC {
+    .SAVR .QuestionBody, .MAVR .QuestionBody {
+      overflow: visible;
+    }
+
+    li .LabelWrapper {
+      margin: 0 0 4px 0;
+    }
+  }
+
 
   @media (min-width: 770px) {
     .SkinInner {

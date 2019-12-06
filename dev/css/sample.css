@@ -32,7 +32,8 @@ html {
 
 body#SurveyEngineBody {
   font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #3a3c42; }
+  color: #3a3c42;
+  background: #efefee; }
 
 /* define official THIS colours */
 :root {
@@ -132,17 +133,57 @@ body#SurveyEngineBody {
       border-radius: 6px; }
   .Skin label.MultipleAnswer, .Skin label.SingleAnswer {
     background: #fefefe;
-    border-radius: 6px; }
+    border-radius: 6px;
+    padding: 13px 20px 13px 50px !important; }
     .Skin label.MultipleAnswer span, .Skin label.SingleAnswer span {
       opacity: 0.8; }
     .Skin label.MultipleAnswer:hover, .Skin label.SingleAnswer:hover {
       -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
       box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
       background: #fff; }
+    .Skin label.MultipleAnswer > span::before, .Skin label.SingleAnswer > span::before {
+      border-color: #dd0031;
+      left: 20px;
+      width: 20px;
+      height: 20px; }
+    .Skin label.MultipleAnswer.q-checked, .Skin label.MultipleAnswer.q-focused, .Skin label.MultipleAnswer.q-checked.q-focused, .Skin label.SingleAnswer.q-checked, .Skin label.SingleAnswer.q-focused, .Skin label.SingleAnswer.q-checked.q-focused {
+      background: #fefefe; }
+      .Skin label.MultipleAnswer.q-checked > span::before, .Skin label.MultipleAnswer.q-focused > span::before, .Skin label.MultipleAnswer.q-checked.q-focused > span::before, .Skin label.SingleAnswer.q-checked > span::before, .Skin label.SingleAnswer.q-focused > span::before, .Skin label.SingleAnswer.q-checked.q-focused > span::before {
+        border-color: #dd0031 !important;
+        background: #dd0031 !important; }
+      .Skin label.MultipleAnswer.q-checked:hover, .Skin label.MultipleAnswer.q-focused:hover, .Skin label.MultipleAnswer.q-checked.q-focused:hover, .Skin label.SingleAnswer.q-checked:hover, .Skin label.SingleAnswer.q-focused:hover, .Skin label.SingleAnswer.q-checked.q-focused:hover {
+        -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+        background: #fff; }
   .Skin .MC .SAVR .QuestionBody, .Skin .MC .MAVR .QuestionBody {
     overflow: visible; }
   .Skin .MC li .LabelWrapper {
     margin: 0 0 4px 0; }
+  .Skin .MC .DL .QuestionBody {
+    padding: 0 !important; }
+  .Skin select {
+    background: #fefefe;
+    min-width: 330px;
+    border-radius: 6px;
+    border: solid 1px #d2d4d3; }
+  .Skin input[type="text"], .Skin .InputText, .Skin .TE .SL .InputText, .Skin .TE .ML .InputText {
+    background: #fefefe;
+    border-radius: 6px;
+    border: solid 1px #d2d4d3;
+    padding: 9px 20px;
+    font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #3a3c42; }
+    .Skin input[type="text"]:focus, .Skin .InputText:focus, .Skin .TE .SL .InputText:focus, .Skin .TE .ML .InputText:focus {
+      border: solid 1px #d2d4d3; }
+  .Skin textarea, .Skin .TE textarea, .Skin .TE .ML textarea {
+    background: #fefefe;
+    border-radius: 6px;
+    border: solid 1px #d2d4d3;
+    height: 180px;
+    font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #3a3c42; }
   @media (min-width: 770px) {
     .Skin .SkinInner {
       width: 100%;

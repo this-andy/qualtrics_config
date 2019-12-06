@@ -43,6 +43,7 @@ html {
 body#SurveyEngineBody {
   font-family: $font-regular;
   color: $color-black;
+  background: #efefee;
 }
 
 /* define official THIS colours */
@@ -183,6 +184,7 @@ body#SurveyEngineBody {
   label.MultipleAnswer, label.SingleAnswer {
     background: #fefefe;
     border-radius: 6px;
+    padding: 13px 20px 13px 50px !important;
 
     span {
       opacity: 0.8;
@@ -191,6 +193,27 @@ body#SurveyEngineBody {
     &:hover {
       box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
       background: #fff;
+    }
+
+    >span::before {
+      border-color: $color-red;
+      left: 20px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &.q-checked, &.q-focused, &.q-checked.q-focused {
+      background: #fefefe;
+
+      > span::before {
+        border-color: $color-red !important;
+        background: $color-red !important;
+      }
+
+      &:hover {
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+        background: #fff;
+      }
     }
   }
 
@@ -202,8 +225,42 @@ body#SurveyEngineBody {
     li .LabelWrapper {
       margin: 0 0 4px 0;
     }
+
+    .DL .QuestionBody {
+      padding: 0 !important;
+    }
   }
 
+  select {
+    background: #fefefe;
+    min-width: 330px;
+    border-radius: 6px;
+    border: solid 1px #d2d4d3;
+  }
+
+  input[type="text"], .InputText, .TE .SL .InputText, .TE .ML .InputText {
+    background: #fefefe;
+    border-radius: 6px;
+    border: solid 1px #d2d4d3;
+    padding: 9px 20px;
+    font-family: $font-regular;
+    font-size: 16px;
+    color: $color-black;
+
+    &:focus {
+      border: solid 1px #d2d4d3;
+    }
+  }
+
+  textarea, .TE textarea, .TE .ML textarea  {
+    background: #fefefe;
+    border-radius: 6px;
+    border: solid 1px #d2d4d3;
+    height: 180px;
+    font-family: $font-regular;
+    font-size: 16px;
+    color: $color-black;
+  }
 
   @media (min-width: 770px) {
     .SkinInner {

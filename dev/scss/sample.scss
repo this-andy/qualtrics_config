@@ -262,6 +262,24 @@ body#SurveyEngineBody {
     color: $color-black;
   }
 
+  .dropzone {
+    background: #fff;
+    border: 1px dashed #d2d4d3;
+    border-radius: 6px;
+
+    button {
+      font-family: $font-regular;
+      color: $color-black;
+      font-size: 16px;
+      line-height: 1.75;
+      opacity: 0.4;
+    }
+
+    &:hover {
+      background: #fff;
+    }
+  }
+
   @media (min-width: 770px) {
     .SkinInner {
       width: 100%;
@@ -270,5 +288,41 @@ body#SurveyEngineBody {
   }
 }
 
+.JFEScope .dropzone:not(.dz-max-files-reached):hover, .JFEScope .dropzone.dz-drag-hover {
+  background: #fff;
+}
 
+.JFEScope .dropzone .dz-preview .dz-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.JFEScope .dropzone .dz-preview.dz-image-preview {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &.dz-complete {
+    .dz-progress {
+      display: none;
+    }
+  }
+}
+
+.JFEScope .dropzone .dz-image-preview .dz-details {
+  text-shadow: none;
+  position: relative;
+  width: auto;
+  min-width: auto;
+}
+
+.JFEScope .dropzone .dz-preview .dz-details div {
+  opacity: 1;
+}
+
+.JFEScope .dropzone .dz-preview:hover .dz-image img {
+  filter: none;
+  transform: none;
+}
 /* end of Rubber Cheese overrides */

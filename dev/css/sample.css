@@ -184,9 +184,58 @@ body#SurveyEngineBody {
     font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 16px;
     color: #3a3c42; }
+  .Skin .dropzone {
+    background: #fff;
+    border: 1px dashed #d2d4d3;
+    border-radius: 6px; }
+    .Skin .dropzone button {
+      font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
+      color: #3a3c42;
+      font-size: 16px;
+      line-height: 1.75;
+      opacity: 0.4; }
+    .Skin .dropzone:hover {
+      background: #fff; }
   @media (min-width: 770px) {
     .Skin .SkinInner {
       width: 100%;
       max-width: 100%; } }
+
+.JFEScope .dropzone:not(.dz-max-files-reached):hover, .JFEScope .dropzone.dz-drag-hover {
+  background: #fff; }
+
+.JFEScope .dropzone .dz-preview .dz-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; }
+
+.JFEScope .dropzone .dz-preview.dz-image-preview {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .JFEScope .dropzone .dz-preview.dz-image-preview.dz-complete .dz-progress {
+    display: none; }
+
+.JFEScope .dropzone .dz-image-preview .dz-details {
+  text-shadow: none;
+  position: relative;
+  width: auto;
+  min-width: auto; }
+
+.JFEScope .dropzone .dz-preview .dz-details div {
+  opacity: 1; }
+
+.JFEScope .dropzone .dz-preview:hover .dz-image img {
+  -webkit-filter: none;
+  filter: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none; }
 
 /* end of Rubber Cheese overrides */

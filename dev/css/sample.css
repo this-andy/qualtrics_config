@@ -134,7 +134,12 @@ body#SurveyEngineBody {
   .Skin label.MultipleAnswer, .Skin label.SingleAnswer {
     background: #fefefe;
     border-radius: 6px;
-    padding: 13px 20px 13px 50px !important; }
+    padding: 13px 20px 13px 50px !important;
+    -webkit-transition: -webkit-box-shadow 400ms;
+    transition: -webkit-box-shadow 400ms;
+    -o-transition: box-shadow 400ms;
+    transition: box-shadow 400ms;
+    transition: box-shadow 400ms, -webkit-box-shadow 400ms; }
     .Skin label.MultipleAnswer span, .Skin label.SingleAnswer span {
       opacity: 0.8; }
     .Skin label.MultipleAnswer:hover, .Skin label.SingleAnswer:hover {
@@ -145,13 +150,16 @@ body#SurveyEngineBody {
       border-color: #dd0031;
       left: 20px;
       width: 20px;
-      height: 20px; }
-    .Skin label.MultipleAnswer.q-checked, .Skin label.MultipleAnswer.q-focused, .Skin label.MultipleAnswer.q-checked.q-focused, .Skin label.SingleAnswer.q-checked, .Skin label.SingleAnswer.q-focused, .Skin label.SingleAnswer.q-checked.q-focused {
+      height: 20px;
+      -webkit-animation: none !important;
+      animation: none !important; }
+    .Skin label.MultipleAnswer.q-checked, .Skin label.MultipleAnswer.q-checked.q-focused, .Skin label.SingleAnswer.q-checked, .Skin label.SingleAnswer.q-checked.q-focused {
       background: #fefefe; }
-      .Skin label.MultipleAnswer.q-checked > span::before, .Skin label.MultipleAnswer.q-focused > span::before, .Skin label.MultipleAnswer.q-checked.q-focused > span::before, .Skin label.SingleAnswer.q-checked > span::before, .Skin label.SingleAnswer.q-focused > span::before, .Skin label.SingleAnswer.q-checked.q-focused > span::before {
+      .Skin label.MultipleAnswer.q-checked > span::before, .Skin label.MultipleAnswer.q-checked.q-focused > span::before, .Skin label.SingleAnswer.q-checked > span::before, .Skin label.SingleAnswer.q-checked.q-focused > span::before {
         border-color: #dd0031 !important;
-        background: #dd0031 !important; }
-      .Skin label.MultipleAnswer.q-checked:hover, .Skin label.MultipleAnswer.q-focused:hover, .Skin label.MultipleAnswer.q-checked.q-focused:hover, .Skin label.SingleAnswer.q-checked:hover, .Skin label.SingleAnswer.q-focused:hover, .Skin label.SingleAnswer.q-checked.q-focused:hover {
+        background: #dd0031 !important;
+        outline: none !important; }
+      .Skin label.MultipleAnswer.q-checked:hover, .Skin label.MultipleAnswer.q-checked.q-focused:hover, .Skin label.SingleAnswer.q-checked:hover, .Skin label.SingleAnswer.q-checked.q-focused:hover {
         -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
         background: #fff; }
@@ -162,10 +170,18 @@ body#SurveyEngineBody {
   .Skin .MC .DL .QuestionBody {
     padding: 0 !important; }
   .Skin select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background: #fefefe;
     min-width: 330px;
     border-radius: 6px;
-    border: solid 1px #d2d4d3; }
+    border: solid 1px #d2d4d3;
+    padding: 10px 20px;
+    font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.63;
+    color: rgba(58, 60, 66, 0.8); }
   .Skin input[type="text"], .Skin .InputText, .Skin .TE .SL .InputText, .Skin .TE .ML .InputText {
     background: #fefefe;
     border-radius: 6px;
@@ -237,5 +253,38 @@ body#SurveyEngineBody {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none; }
+
+@-webkit-keyframes check {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #dd0031 !important;
+    box-shadow: 0 0 0 0 #dd0031 !important; }
+  50% {
+    -webkit-box-shadow: 0 0 2px 3px rgba(221, 0, 49, 0.5) !important;
+    box-shadow: 0 0 2px 3px rgba(221, 0, 49, 0.5) !important; }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 #dd0031 !important;
+    box-shadow: 0 0 0 0 #dd0031 !important; } }
+
+@keyframes check {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #dd0031 !important;
+    box-shadow: 0 0 0 0 #dd0031 !important; }
+  50% {
+    -webkit-box-shadow: 0 0 2px 3px rgba(221, 0, 49, 0.5) !important;
+    box-shadow: 0 0 2px 3px rgba(221, 0, 49, 0.5) !important; }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 #dd0031 !important;
+    box-shadow: 0 0 0 0 #dd0031 !important; } }
+
+@-webkit-keyframes radio {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #dd0031, inset 0 0 0 0 #fff !important;
+    box-shadow: 0 0 0 0 #dd0031, inset 0 0 0 0 #fff !important; }
+  50% {
+    -webkit-box-shadow: 0 0 2px 3px rgba(221, 0, 49, 0.5), inset 0 0 0 3px #fff !important;
+    box-shadow: 0 0 2px 3px rgba(221, 0, 49, 0.5), inset 0 0 0 3px #fff !important; }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 #dd0031, inset 0 0 0 3px #fff !important;
+    box-shadow: 0 0 0 0 #dd0031, inset 0 0 0 3px #fff !important; } }
 
 /* end of Rubber Cheese overrides */

@@ -185,6 +185,7 @@ body#SurveyEngineBody {
     background: #fefefe;
     border-radius: 6px;
     padding: 13px 20px 13px 50px !important;
+    transition: box-shadow 400ms;
 
     span {
       opacity: 0.8;
@@ -200,14 +201,16 @@ body#SurveyEngineBody {
       left: 20px;
       width: 20px;
       height: 20px;
+      animation: none !important;
     }
 
-    &.q-checked, &.q-focused, &.q-checked.q-focused {
+    &.q-checked, &.q-checked.q-focused {
       background: #fefefe;
 
       > span::before {
         border-color: $color-red !important;
         background: $color-red !important;
+        outline: none !important;
       }
 
       &:hover {
@@ -232,10 +235,16 @@ body#SurveyEngineBody {
   }
 
   select {
+    appearance: none;
     background: #fefefe;
     min-width: 330px;
     border-radius: 6px;
     border: solid 1px #d2d4d3;
+    padding: 10px 20px;
+    font-family: $font-regular;
+    font-size: 16px;
+    line-height: 1.63;
+    color: rgba(#3a3c42, 0.8);
   }
 
   input[type="text"], .InputText, .TE .SL .InputText, .TE .ML .InputText {
@@ -325,4 +334,29 @@ body#SurveyEngineBody {
   filter: none;
   transform: none;
 }
+
+@keyframes check{
+  0%{
+    box-shadow:0 0 0 0 $color-red !important;
+  }
+  50%{
+    box-shadow:0 0 2px 3px rgba($color-red,.5) !important
+  }
+  100%{
+    box-shadow:0 0 0 0 $color-red !important;
+  }
+}
+
+@-webkit-keyframes radio{
+  0%{
+    box-shadow:0 0 0 0 $color-red,inset 0 0 0 0 #fff !important;
+  }
+  50%{
+    box-shadow:0 0 2px 3px rgba($color-red,.5),inset 0 0 0 3px #fff !important;;
+  }
+  100%{
+    box-shadow:0 0 0 0 $color-red,inset 0 0 0 3px #fff !important;
+  }
+}
+
 /* end of Rubber Cheese overrides */

@@ -206,6 +206,7 @@ body#SurveyEngineBody {
 
     &.q-checked, &.q-checked.q-focused {
       background: #fefefe;
+      border-radius: 6px;
 
       > span::before {
         border-color: $color-red !important;
@@ -215,6 +216,15 @@ body#SurveyEngineBody {
 
       &:hover {
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+        background: #fff;
+      }
+    }
+
+    &.q-focused {
+      background: #fefefe;
+      border-radius: 6px;
+
+      &:hover {
         background: #fff;
       }
     }
@@ -295,7 +305,29 @@ body#SurveyEngineBody {
       max-width: 100%;
     }
   }
+
+  #Buttons {
+    #NextButton, #PreviousButton {
+      border-radius: 25px;
+      background: $color-red;
+      color: #fff;
+      border: 2px solid $color-red;
+      transition: all 0.2s ease-in;
+      font-family: $font-regular;
+      font-size: 16px;
+      line-height: normal;
+      padding: 15px 40px;
+
+      &:hover {
+        background: #fff;
+        color: $color-red;
+        border-color: $color-red;
+      }
+    }
+  }
 }
+
+/* End .Skin */
 
 .JFEScope .dropzone:not(.dz-max-files-reached):hover, .JFEScope .dropzone.dz-drag-hover {
   background: #fff;
@@ -347,16 +379,33 @@ body#SurveyEngineBody {
   }
 }
 
-@-webkit-keyframes radio{
-  0%{
-    box-shadow:0 0 0 0 $color-red,inset 0 0 0 0 #fff !important;
+@-webkit-keyframes radio {
+  0% {
+    box-shadow: 0 0 0 0 $color-red, inset 0 0 0 0 #fff !important;
   }
-  50%{
-    box-shadow:0 0 2px 3px rgba($color-red,.5),inset 0 0 0 3px #fff !important;;
+  50% {
+    box-shadow: 0 0 2px 3px rgba($color-red, .5), inset 0 0 0 3px #fff !important;;
   }
-  100%{
-    box-shadow:0 0 0 0 $color-red,inset 0 0 0 3px #fff !important;
+  100% {
+    box-shadow: 0 0 0 0 $color-red, inset 0 0 0 3px #fff !important;
   }
+}
+
+.pace {
+  display: block !important;
+}
+
+.pace .pace-progress {
+  background: $color-red !important;
+}
+
+.pace .pace-progress-inner {
+  box-shadow: 0 0 10px $color-red, 0 0 5px $color-red !important;
+}
+
+.pace .pace-activity {
+  border-top-color: $color-red !important;
+  border-left-color: $color-red !important;
 }
 
 /* end of Rubber Cheese overrides */

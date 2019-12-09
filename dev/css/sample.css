@@ -198,6 +198,8 @@ body#SurveyEngineBody {
     color: #3a3c42; }
     .Skin input[type="text"]:focus, .Skin .InputText:focus, .Skin .TE .SL .InputText:focus, .Skin .TE .ML .InputText:focus {
       border: solid 1px #d2d4d3; }
+    .Skin input[type="text"].FailedValidation, .Skin .InputText.FailedValidation, .Skin .TE .SL .InputText.FailedValidation, .Skin .TE .ML .InputText.FailedValidation {
+      border-color: #dd0031; }
   .Skin textarea, .Skin .TE textarea, .Skin .TE .ML textarea {
     background: #fefefe;
     border-radius: 6px;
@@ -238,6 +240,12 @@ body#SurveyEngineBody {
       background: #fff;
       color: #dd0031;
       border-color: #dd0031; }
+  .Skin .QuestionOuter.Highlight .Inner {
+    border: none; }
+  .Skin .ValidationError {
+    background-position: left center;
+    line-height: 2;
+    padding: 0; }
 
 /* End .Skin */
 .JFEScope .dropzone:not(.dz-max-files-reached):hover, .JFEScope .dropzone.dz-drag-hover {

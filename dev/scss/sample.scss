@@ -269,6 +269,10 @@ body#SurveyEngineBody {
     &:focus {
       border: solid 1px #d2d4d3;
     }
+
+    &.FailedValidation {
+      border-color: $color-red;
+    }
   }
 
   textarea, .TE textarea, .TE .ML textarea  {
@@ -324,6 +328,16 @@ body#SurveyEngineBody {
         border-color: $color-red;
       }
     }
+  }
+
+  .QuestionOuter.Highlight .Inner {
+    border: none;
+  }
+
+  .ValidationError {
+    background-position: left center;
+    line-height: 2;
+    padding: 0;
   }
 }
 

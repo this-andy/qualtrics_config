@@ -22,6 +22,38 @@
     $('input[name="NextButton"]').val('Next page');
     $('input[name="NexButton"]').val('Next page');
 
+    /**
+     * Observe DOM changes
+     * @type {{prototype: MutationObserver; new(callback: MutationCallback): MutationObserver} | *}
+     */
+    MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
 
+    var observer = new MutationObserver(function(mutations, observer) {
+
+        mutations.forEach(function(mutation) {
+
+            var target = $(mutation.target);
+
+            moveValidation(target);
+
+        });
+    });
+
+    observer.observe(document, {
+        subtree: true,
+        childList: true
+    });
+
+    /**
+     * Move validation to below the input field
+     * @param target
+     */
+    function moveValidation(target) {
+        if (target.hasClass('ValidationError')) {
+            var input = target.closest('.QuestionOuter').find('.QuestionBody');
+
+            target.appendTo(input);
+        }
+    }
 
 })(jQuery);

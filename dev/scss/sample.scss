@@ -339,6 +339,91 @@ body#SurveyEngineBody {
     line-height: 2;
     padding: 0;
   }
+
+  .RO .DND ul {
+
+    li {
+      background: #fefefe;
+      border-radius: 6px;
+      transition: box-shadow 400ms;
+
+      &:hover {
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+        background: #fff;
+
+        .rank {
+          background: #f2a5ba;
+        }
+      }
+    }
+
+    &.Edited {
+      .rank {
+        background: #f2a5ba;
+      }
+    }
+
+    &.NotEdited  {
+      .rank {
+        visibility: visible;
+      }
+
+      li:hover {
+        .rank {
+          background: #f2a5ba;
+        }
+      }
+    }
+
+    .rank {
+      background: #f2a5ba;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: none;
+      display: block;
+      min-width: initial;
+      min-height: initial;
+      text-align: center;
+      line-height: 20px;
+      padding: 0;
+      color: #fefefe;
+      font-family: $font-regular;
+      font-size: 14px;
+    }
+
+    .ui-sortable-placeholder {
+      border-radius: 6px;
+      border: solid 2px #cdcdcd;
+      padding: 10px;
+      visibility: visible !important;
+      background: #efefee;
+    }
+  }
+
+
+  .PGR .DragAndDrop {
+    .Group {
+      h2 {
+        background: $color-yellow;
+        color: $color-black;
+        font-family: $font-regular;
+        font-size: 16px;
+        line-height: normal;
+        padding: 14px 20px;
+        box-sizing: border-box;
+        border-bottom: 0;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+      }
+    }
+
+    td.groupsContainerTd div>div {
+      border: solid 1px #d2d4d3;
+      border-top-right-radius: 6px;
+      border-top-left-radius: 6px;
+    }
+  }
 }
 
 /* End .Skin */

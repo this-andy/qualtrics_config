@@ -488,6 +488,27 @@ body#SurveyEngineBody {
       }
     }
   }
+
+  .HLTextWords {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .HLTextWord {
+    border-radius: 6px;
+    background-color: #fefefe;
+    padding: 10px 20px;
+    margin: 0 4px 4px 0;
+    display: block;
+    font-size: 16px;
+    line-height: 1.63;
+    color: $color-black;
+
+    &:hover {
+      background-color: #bdbdbd !important;
+      color: $color-black !important;
+    }
+  }
 }
 
 /* End .Skin */

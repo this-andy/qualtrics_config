@@ -352,6 +352,26 @@ body#SurveyEngineBody {
       padding: 10px 20px; }
       .Skin .PGR .DragAndDrop .Items > ul > li:hover .rank {
         background: #f2a5ba; }
+  .Skin .HLTextWords {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .Skin .HLTextWord {
+    border-radius: 6px;
+    background-color: #fefefe;
+    padding: 10px 20px;
+    margin: 0 4px 4px 0;
+    display: block;
+    font-size: 16px;
+    line-height: 1.63;
+    color: #3a3c42; }
+    .Skin .HLTextWord:hover {
+      background-color: #bdbdbd !important;
+      color: #3a3c42 !important; }
 
 /* End .Skin */
 .JFEScope .dropzone:not(.dz-max-files-reached):hover, .JFEScope .dropzone.dz-drag-hover {

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="20px" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icon-drag-dots</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="drag-drop" transform="translate(-628.000000, -13.000000)" fill="#D8D8D8">
+            <g id="icon-drag-dots">
+                <g transform="translate(628.000000, 13.000000)">
+                    <circle id="Oval" cx="2" cy="2" r="2"></circle>
+                    <circle id="Oval" cx="10" cy="2" r="2"></circle>
+                    <circle id="Oval" cx="10" cy="10" r="2"></circle>
+                    <circle id="Oval" cx="2" cy="10" r="2"></circle>
+                    <circle id="Oval" cx="2" cy="18" r="2"></circle>
+                    <circle id="Oval" cx="10" cy="18" r="2"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

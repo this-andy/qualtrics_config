@@ -346,6 +346,18 @@ body#SurveyEngineBody {
       background: #fefefe;
       border-radius: 6px;
       transition: box-shadow 400ms;
+      position: relative;
+
+      &:after {
+        content: '';
+        background: url(../images/icon-drag-dots.svg) no-repeat;
+        width: 12px;
+        height: 20px;
+        background-size: cover;
+        position: absolute;
+        right: 20px;
+        top: 14px;
+      }
 
       &:hover {
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
@@ -398,6 +410,10 @@ body#SurveyEngineBody {
       padding: 10px;
       visibility: visible !important;
       background: #efefee;
+
+      &:after {
+        display: none;
+      }
     }
   }
 
@@ -422,6 +438,54 @@ body#SurveyEngineBody {
       border: solid 1px #d2d4d3;
       border-top-right-radius: 6px;
       border-top-left-radius: 6px;
+    }
+
+    .Items {
+
+      .ui-sortable-placeholder {
+        border-radius: 6px;
+        border: solid 2px #cdcdcd;
+        padding: 10px;
+        visibility: visible !important;
+        background: #efefee;
+
+        &:after {
+          display: none;
+        }
+      }
+
+      > ul > li {
+
+        background: #fefefe;
+        border-radius: 6px;
+        transition: box-shadow 400ms;
+        position: relative;
+        margin-bottom: 4px;
+        text-align: left;
+        padding: 10px 20px;
+        font-size: 16px;
+
+        &:after {
+          content: '';
+          background: url(../images/icon-drag-dots.svg) no-repeat;
+          width: 12px;
+          height: 20px;
+          background-size: cover;
+          position: absolute;
+          right: 20px;
+          top: 14px;
+        }
+
+        &:hover {
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+          background: #fff;
+          padding: 10px 20px;
+
+          .rank {
+            background: #f2a5ba;
+          }
+        }
+      }
     }
   }
 }

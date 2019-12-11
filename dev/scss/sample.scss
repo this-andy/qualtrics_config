@@ -509,6 +509,55 @@ body#SurveyEngineBody {
       color: $color-black !important;
     }
   }
+
+  label.q-checkbox.q-checked {
+    background: $color-red !important;
+    border: none;
+
+    &.q-focused {
+      background-color: $color-red !important;
+      border: none;
+    }
+  }
+
+  .MAHR td label.q-checkbox {
+    top: 20px;
+  }
+
+  .MC .MAHR .QuestionBody table td .LabelWrapper label {
+    padding-top: 50px !important;
+    line-height: 1.38;
+  }
+
+  label.q-radio {
+    border-color: $color-red;
+    animation: none !important;
+
+    &.q-checked {
+      background-color: $color-red;
+      border-color: $color-red;
+
+      &.q-focused {
+        background-color: $color-red;
+        border-color: $color-red;
+      }
+    }
+  }
+
+  .SAHR td label.q-radio {
+    top: 20px;
+  }
+
+  .MC .SAHR .QuestionBody table td .LabelWrapper label {
+    padding-top: 50px !important;
+    line-height: 1.38;
+  }
+
+  label.SingleAnswer {
+    display: flex;
+    align-items: center;
+    line-height: 1.38;
+  }
 }
 
 /* End .Skin */

@@ -56,4 +56,20 @@
         }
     }
 
+    /**
+     * Set all labels in a row to match the same height
+     */
+    $('.SACOL tr').each(function () {
+
+        var maxHeight = 0;
+
+        $(this).find('td').each(function () {
+            maxHeight = $(this).height() > maxHeight ? $(this).height() : maxHeight;
+        });
+
+        $(this).find('td').each(function () {
+            $(this).find('.LabelWrapper label').height(maxHeight);
+        });
+    });
+
 })(jQuery);

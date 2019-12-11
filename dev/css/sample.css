@@ -51,6 +51,9 @@ body#SurveyEngineBody {
 .JFEScope #SurveyEngineBody {
   height: auto; }
 
+#HeaderContainer {
+  display: none; }
+
 .Skin {
   font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
@@ -372,12 +375,14 @@ body#SurveyEngineBody {
     .Skin .HLTextWord:hover {
       background-color: #bdbdbd !important;
       color: #3a3c42 !important; }
-  .Skin label.q-checkbox.q-checked {
-    background: #dd0031 !important;
-    border: none; }
-    .Skin label.q-checkbox.q-checked.q-focused {
-      background-color: #dd0031 !important;
+  .Skin label.q-checkbox {
+    border-color: #dd0031; }
+    .Skin label.q-checkbox.q-checked {
+      background: #dd0031 !important;
       border: none; }
+      .Skin label.q-checkbox.q-checked.q-focused {
+        background-color: #dd0031 !important;
+        border: none; }
   .Skin .MAHR td label.q-checkbox {
     top: 20px; }
   .Skin .MC .MAHR .QuestionBody table td .LabelWrapper label {

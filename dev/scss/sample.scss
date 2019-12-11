@@ -65,6 +65,10 @@ body#SurveyEngineBody {
   height: auto;
 }
 
+#HeaderContainer {
+  display: none;
+}
+
 .Skin {
   font-family: $font-regular;
   font-size: 16px;
@@ -510,13 +514,17 @@ body#SurveyEngineBody {
     }
   }
 
-  label.q-checkbox.q-checked {
-    background: $color-red !important;
-    border: none;
+  label.q-checkbox {
+    border-color: $color-red;
 
-    &.q-focused {
-      background-color: $color-red !important;
+    &.q-checked {
+      background: $color-red !important;
       border: none;
+
+      &.q-focused {
+        background-color: $color-red !important;
+        border: none;
+      }
     }
   }
 

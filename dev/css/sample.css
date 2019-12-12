@@ -345,9 +345,21 @@ body#SurveyEngineBody {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    @media (max-width: 600px) {
+      .Skin .PGR .DragAndDrop .stack tr {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
   .Skin .PGR .DragAndDrop td.itemsContainerTd {
     width: 290px;
     margin-right: 20px; }
+    @media (max-width: 600px) {
+      .Skin .PGR .DragAndDrop td.itemsContainerTd {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%; } }
   .Skin .PGR .DragAndDrop td.groupsContainerTd {
     -webkit-flex-basis: 330px;
     -ms-flex-preferred-size: 330px;
@@ -358,6 +370,10 @@ body#SurveyEngineBody {
       border-top-right-radius: 6px;
       border-top-left-radius: 6px;
       width: 100%; }
+    @media (max-width: 600px) {
+      .Skin .PGR .DragAndDrop td.groupsContainerTd {
+        margin-left: 0;
+        width: 100%; } }
   .Skin .PGR .DragAndDrop .Items .ui-sortable-placeholder {
     border-radius: 6px;
     border: solid 2px #cdcdcd;
@@ -504,6 +520,9 @@ body#SurveyEngineBody {
     -ms-flex-align: center;
     align-items: center;
     line-height: 1.38; }
+  .Skin .HLTextToolTipBox .HLTextRemove {
+    color: #dd0031;
+    font-size: 16px; }
 
 /* End .Skin */
 .JFEScope .dropzone:not(.dz-max-files-reached):hover, .JFEScope .dropzone.dz-drag-hover {

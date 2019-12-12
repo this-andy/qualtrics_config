@@ -468,12 +468,23 @@ body#SurveyEngineBody {
     .stack tr {
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
     }
 
     td.itemsContainerTd {
       width: 290px;
       margin-right: 20px;
+
+      @media (max-width: 600px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+      }
     }
+
     td.groupsContainerTd  {
       flex-basis: 330px;
       margin-left: 20px;
@@ -482,6 +493,11 @@ body#SurveyEngineBody {
         border: solid 1px #d2d4d3;
         border-top-right-radius: 6px;
         border-top-left-radius: 6px;
+        width: 100%;
+      }
+
+      @media (max-width: 600px) {
+        margin-left: 0;
         width: 100%;
       }
     }
@@ -651,6 +667,11 @@ body#SurveyEngineBody {
     display: flex;
     align-items: center;
     line-height: 1.38;
+  }
+
+  .HLTextToolTipBox .HLTextRemove {
+    color: $color-red;
+    font-size: 16px;
   }
 }
 

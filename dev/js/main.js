@@ -20,7 +20,7 @@
      * Update next and previous button text
      */
     $('input[name="NextButton"]').val('Next page');
-    $('input[name="NexButton"]').val('Next page');
+    $('input[name="PreviousButton"]').val('Previous page');
 
     /**
      * Observe DOM changes
@@ -71,5 +71,7 @@
             $(this).find('.LabelWrapper label').height(maxHeight);
         });
     });
+
+
 
 })(jQuery);

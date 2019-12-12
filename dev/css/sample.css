@@ -198,19 +198,21 @@ body#SurveyEngineBody {
     padding: 9px 20px;
     font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 16px;
-    color: #3a3c42; }
+    color: #3a3c42;
+    width: 100% !important; }
     .Skin input[type="text"]:focus, .Skin .InputText:focus, .Skin .TE .SL .InputText:focus, .Skin .TE .ML .InputText:focus {
       border: solid 1px #d2d4d3; }
     .Skin input[type="text"].FailedValidation, .Skin .InputText.FailedValidation, .Skin .TE .SL .InputText.FailedValidation, .Skin .TE .ML .InputText.FailedValidation {
       border-color: #dd0031; }
-  .Skin textarea, .Skin .TE textarea, .Skin .TE .ML textarea {
+  .Skin textarea, .Skin .TE textarea, .Skin .TE .ML textarea, .Skin .MC .TextEntryBox, .Skin .TextEntryBox {
     background: #fefefe;
     border-radius: 6px;
     border: solid 1px #d2d4d3;
     height: 180px;
     font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 16px;
-    color: #3a3c42; }
+    color: #3a3c42;
+    width: 100% !important; }
   .Skin .dropzone {
     background: #fff;
     border: 1px dashed #d2d4d3;

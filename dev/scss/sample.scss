@@ -270,6 +270,7 @@ body#SurveyEngineBody {
     font-family: $font-regular;
     font-size: 16px;
     color: $color-black;
+    width: 100% !important;
 
     &:focus {
       border: solid 1px #d2d4d3;
@@ -280,7 +281,7 @@ body#SurveyEngineBody {
     }
   }
 
-  textarea, .TE textarea, .TE .ML textarea  {
+  textarea, .TE textarea, .TE .ML textarea, .MC .TextEntryBox, .TextEntryBox  {
     background: #fefefe;
     border-radius: 6px;
     border: solid 1px #d2d4d3;
@@ -288,6 +289,7 @@ body#SurveyEngineBody {
     font-family: $font-regular;
     font-size: 16px;
     color: $color-black;
+    width: 100% !important;
   }
 
   .dropzone {
@@ -673,6 +675,8 @@ body#SurveyEngineBody {
     color: $color-red;
     font-size: 16px;
   }
+
+
 }
 
 /* End .Skin */

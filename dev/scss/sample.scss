@@ -82,6 +82,7 @@ body#SurveyEngineBody {
     max-width: 100%;
     margin: 0;
     padding: 15px;
+    position: fixed;
 
     table {
       width: 100%;
@@ -229,6 +230,10 @@ body#SurveyEngineBody {
     }
   }
 
+  label.q-checkbox.q-checked, label.q-checkbox.q-checked.q-focused {
+    background: url(../images/tick.svg) center center / 50% no-repeat !important;
+  }
+
   label.MultipleAnswer, label.SingleAnswer {
     background: #fefefe;
     border-radius: 6px;
@@ -236,10 +241,12 @@ body#SurveyEngineBody {
     transition: box-shadow 400ms;
 
     span {
+      color: #616368;
       opacity: 1;
       display: flex;
       align-items: center;
       width: 100%;
+      padding-bottom: 0 !important;
     }
 
     &:hover {
@@ -256,6 +263,7 @@ body#SurveyEngineBody {
       margin: 0 10px 0 0;
       top: initial;
       position: relative;
+      flex-shrink: 0;
     }
 
     &.q-checked, &.q-checked.q-focused {
@@ -263,11 +271,6 @@ body#SurveyEngineBody {
       border-radius: 6px;
       color: $color-black;
 
-      > span::before {
-        border-color: $color-red !important;
-        background: $color-red !important;
-        outline: none !important;
-      }
 
       &:hover {
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
@@ -288,6 +291,10 @@ body#SurveyEngineBody {
 
   label.MultipleAnswer {
 
+    >span::before {
+      border-radius: 0;
+    }
+
     >span::after {
       content: '';
       background: url(../images/tick.svg) no-repeat center;
@@ -297,6 +304,17 @@ body#SurveyEngineBody {
       position: absolute;
       left: 25px;
       top: 22px;
+    }
+  }
+
+  label.SingleAnswer {
+    &.q-checked, &.q-checked.q-focused {
+
+      > span::before {
+        border-color: $color-red !important;
+        background: $color-red !important;
+        outline: none !important;
+      }
     }
   }
 
@@ -707,7 +725,7 @@ body#SurveyEngineBody {
     border-color: $color-red;
 
     &.q-checked {
-      background: $color-red !important;
+      background-color: $color-red !important;
       border: none;
 
       &.q-focused {

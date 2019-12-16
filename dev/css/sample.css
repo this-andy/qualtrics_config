@@ -64,7 +64,8 @@ body#SurveyEngineBody {
     width: 100%;
     max-width: 100%;
     margin: 0;
-    padding: 15px; }
+    padding: 15px;
+    position: fixed; }
     .Skin #ProgressBar table {
       width: 100%;
       max-width: 1185px; }
@@ -163,6 +164,8 @@ body#SurveyEngineBody {
     @media (min-width: 770px) {
       .Skin .QuestionBody {
         padding-bottom: 0 !important; } }
+  .Skin label.q-checkbox.q-checked, .Skin label.q-checkbox.q-checked.q-focused {
+    background: url(../images/tick.svg) center center/50% no-repeat !important; }
   .Skin label.MultipleAnswer, .Skin label.SingleAnswer {
     background: #fefefe;
     border-radius: 6px;
@@ -173,6 +176,7 @@ body#SurveyEngineBody {
     transition: box-shadow 400ms;
     transition: box-shadow 400ms, -webkit-box-shadow 400ms; }
     .Skin label.MultipleAnswer span, .Skin label.SingleAnswer span {
+      color: #616368;
       opacity: 1;
       display: -webkit-box;
       display: -webkit-flex;
@@ -182,7 +186,8 @@ body#SurveyEngineBody {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center;
-      width: 100%; }
+      width: 100%;
+      padding-bottom: 0 !important; }
     .Skin label.MultipleAnswer:hover, .Skin label.SingleAnswer:hover {
       -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
       box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
@@ -196,15 +201,14 @@ body#SurveyEngineBody {
       animation: none !important;
       margin: 0 10px 0 0;
       top: initial;
-      position: relative; }
+      position: relative;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0; }
     .Skin label.MultipleAnswer.q-checked, .Skin label.MultipleAnswer.q-checked.q-focused, .Skin label.SingleAnswer.q-checked, .Skin label.SingleAnswer.q-checked.q-focused {
       background: #fefefe;
       border-radius: 6px;
       color: #3a3c42; }
-      .Skin label.MultipleAnswer.q-checked > span::before, .Skin label.MultipleAnswer.q-checked.q-focused > span::before, .Skin label.SingleAnswer.q-checked > span::before, .Skin label.SingleAnswer.q-checked.q-focused > span::before {
-        border-color: #dd0031 !important;
-        background: #dd0031 !important;
-        outline: none !important; }
       .Skin label.MultipleAnswer.q-checked:hover, .Skin label.MultipleAnswer.q-checked.q-focused:hover, .Skin label.SingleAnswer.q-checked:hover, .Skin label.SingleAnswer.q-checked.q-focused:hover {
         -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
@@ -215,6 +219,8 @@ body#SurveyEngineBody {
       color: #3a3c42; }
       .Skin label.MultipleAnswer.q-focused:hover, .Skin label.SingleAnswer.q-focused:hover {
         background: #fff; }
+  .Skin label.MultipleAnswer > span::before {
+    border-radius: 0; }
   .Skin label.MultipleAnswer > span::after {
     content: '';
     background: url(../images/tick.svg) no-repeat center;
@@ -224,6 +230,10 @@ body#SurveyEngineBody {
     position: absolute;
     left: 25px;
     top: 22px; }
+  .Skin label.SingleAnswer.q-checked > span::before, .Skin label.SingleAnswer.q-checked.q-focused > span::before {
+    border-color: #dd0031 !important;
+    background: #dd0031 !important;
+    outline: none !important; }
   .Skin .MC .SAVR .QuestionBody, .Skin .MC .MAVR .QuestionBody {
     overflow: visible; }
   .Skin .MC li .LabelWrapper {
@@ -559,7 +569,7 @@ body#SurveyEngineBody {
   .Skin label.q-checkbox {
     border-color: #dd0031; }
     .Skin label.q-checkbox.q-checked {
-      background: #dd0031 !important;
+      background-color: #dd0031 !important;
       border: none; }
       .Skin label.q-checkbox.q-checked.q-focused {
         background-color: #dd0031 !important;

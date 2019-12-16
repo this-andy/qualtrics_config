@@ -305,10 +305,13 @@ body#SurveyEngineBody {
     font-size: 16px;
     line-height: normal;
     padding: 15px 40px; }
-    .Skin #Buttons #NextButton:hover, .Skin #Buttons #PreviousButton:hover {
+    .Skin #Buttons #NextButton:hover, .Skin #Buttons #NextButton:active, .Skin #Buttons #NextButton:focus, .Skin #Buttons #PreviousButton:hover, .Skin #Buttons #PreviousButton:active, .Skin #Buttons #PreviousButton:focus {
       background: #fff;
       color: #dd0031;
       border-color: #dd0031; }
+  .Skin #Buttons #PreviousButton {
+    background: initial;
+    color: #dd0031; }
   .Skin .QuestionOuter.Highlight .Inner {
     border: none; }
   .Skin .QuestionOuter .Inner {

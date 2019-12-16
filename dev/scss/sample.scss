@@ -401,11 +401,16 @@ body#SurveyEngineBody {
       line-height: normal;
       padding: 15px 40px;
 
-      &:hover {
+      &:hover, &:active, &:focus {
         background: #fff;
         color: $color-red;
         border-color: $color-red;
       }
+    }
+
+    #PreviousButton {
+      background: initial;
+      color: $color-red;
     }
   }
 

@@ -219,9 +219,18 @@ body#SurveyEngineBody {
     font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 16px;
     color: #3a3c42;
-    width: 100% !important; }
-    .Skin input[type="text"]:focus, .Skin .InputText:focus, .Skin .TE .SL .InputText:focus, .Skin .TE .ML .InputText:focus {
+    width: 100% !important;
+    -webkit-transition: -webkit-box-shadow 400ms;
+    transition: -webkit-box-shadow 400ms;
+    -o-transition: box-shadow 400ms;
+    transition: box-shadow 400ms;
+    transition: box-shadow 400ms, -webkit-box-shadow 400ms; }
+    .Skin input[type="text"]:hover, .Skin .InputText:hover, .Skin .TE .SL .InputText:hover, .Skin .TE .ML .InputText:hover {
+      -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
       border: solid 1px #d2d4d3; }
+    .Skin input[type="text"]:focus, .Skin .InputText:focus, .Skin .TE .SL .InputText:focus, .Skin .TE .ML .InputText:focus {
+      border: solid 1px #adadad; }
     .Skin input[type="text"].FailedValidation, .Skin .InputText.FailedValidation, .Skin .TE .SL .InputText.FailedValidation, .Skin .TE .ML .InputText.FailedValidation {
       border-color: #dd0031; }
   .Skin textarea, .Skin .TE textarea, .Skin .TE .ML textarea, .Skin .MC .TextEntryBox, .Skin .TextEntryBox {
@@ -273,6 +282,9 @@ body#SurveyEngineBody {
     background-position: left center;
     line-height: 2;
     padding: 0; }
+    @media (max-width: 770px) {
+      .Skin .ValidationError {
+        margin-left: 0 !important; } }
   .Skin .RO .DND ul li {
     background: #fefefe;
     border-radius: 6px;

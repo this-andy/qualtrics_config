@@ -298,9 +298,15 @@ body#SurveyEngineBody {
     font-size: 16px;
     color: $color-black;
     width: 100% !important;
+    transition: box-shadow 400ms;
+
+    &:hover {
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+      border: solid 1px #d2d4d3;
+    }
 
     &:focus {
-      border: solid 1px #d2d4d3;
+      border: solid 1px #adadad;
     }
 
     &.FailedValidation {
@@ -376,6 +382,10 @@ body#SurveyEngineBody {
     background-position: left center;
     line-height: 2;
     padding: 0;
+
+    @media (max-width: 770px) {
+      margin-left: 0 !important;
+    }
   }
 
   .RO .DND ul {

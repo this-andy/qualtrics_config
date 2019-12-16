@@ -120,6 +120,23 @@ body#SurveyEngineBody {
     line-height: 1.29;
     padding: 0;
     margin: 0 0 30px 0; }
+    .Skin .QuestionText h1, .Skin .QuestionText h2 {
+      font-size: 38px;
+      line-height: 1.15;
+      letter-spacing: -0.66px;
+      margin: 0 0 20px 0; }
+    .Skin .QuestionText p {
+      font-size: 16px;
+      line-height: 1.63;
+      margin: 0 0 30px 0;
+      font-weight: 400;
+      font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    .Skin .QuestionText li {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
+      color: #3a3c42;
+      line-height: 1.63; }
   .Skin #SkinContent {
     max-width: 700px;
     margin: 0 auto;
@@ -134,6 +151,9 @@ body#SurveyEngineBody {
       max-width: 100%;
       height: auto !important;
       border-radius: 6px; }
+    @media (max-width: 770px) {
+      .Skin .QuestionBody {
+        padding: 0 !important; } }
   .Skin label.MultipleAnswer, .Skin label.SingleAnswer {
     background: #fefefe;
     border-radius: 6px;
@@ -246,6 +266,8 @@ body#SurveyEngineBody {
       color: #dd0031;
       border-color: #dd0031; }
   .Skin .QuestionOuter.Highlight .Inner {
+    border: none; }
+  .Skin .QuestionOuter .Inner {
     border: none; }
   .Skin .ValidationError {
     background-position: left center;
@@ -530,10 +552,28 @@ body#SurveyEngineBody {
 .JFEScope .dropzone:not(.dz-max-files-reached):hover, .JFEScope .dropzone.dz-drag-hover {
   background: #fff; }
 
+.JFEScope .dropzone .dz-preview {
+  margin: 0; }
+
 .JFEScope .dropzone .dz-preview .dz-image {
   width: 60px;
   height: 60px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  border: 2px solid #f3a5b9;
+  position: relative;
+  overflow: hidden;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+  .JFEScope .dropzone .dz-preview .dz-image img {
+    max-width: initial;
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
 
 .JFEScope .dropzone .dz-preview.dz-image-preview {
   width: 100%;
@@ -546,13 +586,27 @@ body#SurveyEngineBody {
   -ms-flex-align: center;
   align-items: center; }
   .JFEScope .dropzone .dz-preview.dz-image-preview.dz-complete .dz-progress {
+    display: block;
+    opacity: 1; }
+
+.JFEScope .dropzone .dz-preview .dz-progress {
+  background: #efefee;
+  height: 4px;
+  border-radius: 4px;
+  overflow: hidden; }
+  .JFEScope .dropzone .dz-preview .dz-progress .dz-upload {
+    background: #ffd959; }
+  .JFEScope .dropzone .dz-preview .dz-progress .dz-upload-back {
     display: none; }
 
 .JFEScope .dropzone .dz-image-preview .dz-details {
   text-shadow: none;
   position: relative;
-  width: auto;
-  min-width: auto; }
+  min-width: auto;
+  width: 100%;
+  text-align: left; }
+  .JFEScope .dropzone .dz-image-preview .dz-details .dz-size, .JFEScope .dropzone .dz-image-preview .dz-details .dz-type {
+    display: none; }
 
 .JFEScope .dropzone .dz-preview .dz-details div {
   opacity: 1; }
@@ -560,9 +614,9 @@ body#SurveyEngineBody {
 .JFEScope .dropzone .dz-preview:hover .dz-image img {
   -webkit-filter: none;
   filter: none;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none; }
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
 
 @-webkit-keyframes check {
   0% {

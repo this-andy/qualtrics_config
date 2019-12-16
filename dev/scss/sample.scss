@@ -164,6 +164,29 @@ body#SurveyEngineBody {
     line-height: 1.29;
     padding: 0;
     margin: 0 0 30px 0;
+
+    h1, h2 {
+      font-size: 38px;
+      line-height: 1.15;
+      letter-spacing: -0.66px;
+      margin: 0 0 20px 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.63;
+      margin: 0 0 30px 0;
+      font-weight: 400;
+      font-family: $font-regular;
+    }
+
+    li {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: $font-regular;
+      color: $color-black;
+      line-height: 1.63;
+    }
   }
 
   #SkinContent {
@@ -183,6 +206,10 @@ body#SurveyEngineBody {
       max-width: 100%;
       height: auto !important;
       border-radius: 6px;
+    }
+
+    @media (max-width: 770px) {
+      padding: 0 !important;
     }
   }
 
@@ -338,6 +365,10 @@ body#SurveyEngineBody {
   }
 
   .QuestionOuter.Highlight .Inner {
+    border: none;
+  }
+
+  .QuestionOuter .Inner {
     border: none;
   }
 
@@ -685,10 +716,27 @@ body#SurveyEngineBody {
   background: #fff;
 }
 
+.JFEScope .dropzone .dz-preview {
+  margin: 0;
+}
+
 .JFEScope .dropzone .dz-preview .dz-image {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  border: 2px solid #f3a5b9;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  img {
+    max-width: initial;
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .JFEScope .dropzone .dz-preview.dz-image-preview {
@@ -698,16 +746,37 @@ body#SurveyEngineBody {
 
   &.dz-complete {
     .dz-progress {
-      display: none;
+      display: block;
+      opacity: 1;
     }
+  }
+}
+
+.JFEScope .dropzone .dz-preview .dz-progress {
+  background: #efefee;
+  height: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .dz-upload {
+    background: $color-yellow;
+  }
+
+  .dz-upload-back {
+    display: none;
   }
 }
 
 .JFEScope .dropzone .dz-image-preview .dz-details {
   text-shadow: none;
   position: relative;
-  width: auto;
   min-width: auto;
+  width: 100%;
+  text-align: left;
+
+  .dz-size, .dz-type {
+    display: none;
+  }
 }
 
 .JFEScope .dropzone .dz-preview .dz-details div {
@@ -716,7 +785,7 @@ body#SurveyEngineBody {
 
 .JFEScope .dropzone .dz-preview:hover .dz-image img {
   filter: none;
-  transform: none;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes check{

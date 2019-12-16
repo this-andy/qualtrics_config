@@ -126,6 +126,7 @@ body#SurveyEngineBody {
 
   .QuestionOuter {
     overflow: visible;
+    padding-bottom: 100px;
   }
 
   .InnerInner {
@@ -217,6 +218,10 @@ body#SurveyEngineBody {
     @media (max-width: 770px) {
       padding: 0 !important;
     }
+
+    @media (min-width: 770px) {
+      padding-bottom: 0 !important;
+    }
   }
 
   label.MultipleAnswer, label.SingleAnswer {
@@ -268,6 +273,20 @@ body#SurveyEngineBody {
     }
   }
 
+  label.MultipleAnswer {
+
+    >span::after {
+      content: '';
+      background: url(../images/tick.svg) no-repeat center;
+      background-size: cover;
+      width: 10px;
+      height: 8px;
+      position: absolute;
+      left: 25px;
+      top: 22px;
+    }
+  }
+
   .MC {
     .SAVR .QuestionBody, .MAVR .QuestionBody {
       overflow: visible;
@@ -296,6 +315,7 @@ body#SurveyEngineBody {
   }
 
   input[type="text"], .InputText, .TE .SL .InputText, .TE .ML .InputText {
+    appearance: none;
     background: #fefefe;
     border-radius: 6px;
     border: solid 1px #d2d4d3;
@@ -723,6 +743,9 @@ body#SurveyEngineBody {
     font-size: 16px;
   }
 
+  .Separator {
+    display: none;
+  }
 
 }
 
@@ -736,22 +759,32 @@ body#SurveyEngineBody {
   margin: 0;
 }
 
-.JFEScope .dropzone .dz-preview .dz-image {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 2px solid #f3a5b9;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-
-  img {
-    max-width: initial;
+.JFEScope .dropzone .dz-preview {
+  min-height: auto;
+  .dz-image {
     width: 60px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #f3a5b9;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    img {
+      max-width: initial;
+      width: 60px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &.dz-file-preview {
+    .dz-image {
+      border-radius: 50%;
+      background: #fff url(../images/icon-file.svg) center no-repeat;
+    }
   }
 }
 
@@ -802,6 +835,12 @@ body#SurveyEngineBody {
 .JFEScope .dropzone .dz-preview:hover .dz-image img {
   filter: none;
   transform: translate(-50%, -50%);
+}
+
+.JFEScope .dropzone .dz-preview .dz-details {
+  .dz-size, .dz-type {
+    display: none;
+  }
 }
 
 @keyframes check{

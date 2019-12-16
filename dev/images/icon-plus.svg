@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>plus-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="question-types-desktop" transform="translate(-416.000000, -4203.000000)">
+            <g id="file-upload" transform="translate(252.000000, 4075.000000)">
+                <g id="form-field-no-title" transform="translate(50.000000, 92.000000)">
+                    <g id="plus-icon" transform="translate(115.000000, 37.000000)">
+                        <circle id="Oval" stroke="#F00029" stroke-width="2" cx="13" cy="13" r="13"></circle>
+                        <g id="icon-plus" transform="translate(7.000000, 7.000000)" fill="#F00029">
+                            <rect id="Rectangle" x="5" y="0" width="2" height="12" rx="1"></rect>
+                            <rect id="Rectangle" transform="translate(6.000000, 6.000000) rotate(90.000000) translate(-6.000000, -6.000000) " x="5" y="0" width="2" height="12" rx="1"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

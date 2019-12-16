@@ -91,7 +91,8 @@ body#SurveyEngineBody {
   .Skin #Questions {
     overflow: visible; }
   .Skin .QuestionOuter {
-    overflow: visible; }
+    overflow: visible;
+    padding-bottom: 100px; }
   .Skin .InnerInner > fieldset > legend {
     margin-bottom: 30px; }
   .Skin .DB .QuestionText {
@@ -156,6 +157,9 @@ body#SurveyEngineBody {
     @media (max-width: 770px) {
       .Skin .QuestionBody {
         padding: 0 !important; } }
+    @media (min-width: 770px) {
+      .Skin .QuestionBody {
+        padding-bottom: 0 !important; } }
   .Skin label.MultipleAnswer, .Skin label.SingleAnswer {
     background: #fefefe;
     border-radius: 6px;
@@ -194,6 +198,15 @@ body#SurveyEngineBody {
       border-radius: 6px; }
       .Skin label.MultipleAnswer.q-focused:hover, .Skin label.SingleAnswer.q-focused:hover {
         background: #fff; }
+  .Skin label.MultipleAnswer > span::after {
+    content: '';
+    background: url(../images/tick.svg) no-repeat center;
+    background-size: cover;
+    width: 10px;
+    height: 8px;
+    position: absolute;
+    left: 25px;
+    top: 22px; }
   .Skin .MC .SAVR .QuestionBody, .Skin .MC .MAVR .QuestionBody {
     overflow: visible; }
   .Skin .MC li .LabelWrapper {
@@ -214,6 +227,9 @@ body#SurveyEngineBody {
     line-height: 1.63;
     color: rgba(58, 60, 66, 0.8); }
   .Skin input[type="text"], .Skin .InputText, .Skin .TE .SL .InputText, .Skin .TE .ML .InputText {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background: #fefefe;
     border-radius: 6px;
     border: solid 1px #d2d4d3;
@@ -561,6 +577,8 @@ body#SurveyEngineBody {
   .Skin .HLTextToolTipBox .HLTextRemove {
     color: #dd0031;
     font-size: 16px; }
+  .Skin .Separator {
+    display: none; }
 
 /* End .Skin */
 .JFEScope .dropzone:not(.dz-max-files-reached):hover, .JFEScope .dropzone.dz-drag-hover {
@@ -569,25 +587,30 @@ body#SurveyEngineBody {
 .JFEScope .dropzone .dz-preview {
   margin: 0; }
 
-.JFEScope .dropzone .dz-preview .dz-image {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 2px solid #f3a5b9;
-  position: relative;
-  overflow: hidden;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0; }
-  .JFEScope .dropzone .dz-preview .dz-image img {
-    max-width: initial;
+.JFEScope .dropzone .dz-preview {
+  min-height: auto; }
+  .JFEScope .dropzone .dz-preview .dz-image {
     width: 60px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #f3a5b9;
+    position: relative;
+    overflow: hidden;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
+    .JFEScope .dropzone .dz-preview .dz-image img {
+      max-width: initial;
+      width: 60px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .JFEScope .dropzone .dz-preview.dz-file-preview .dz-image {
+    border-radius: 50%;
+    background: #fff url(../images/icon-file.svg) center no-repeat; }
 
 .JFEScope .dropzone .dz-preview.dz-image-preview {
   width: 100%;
@@ -631,6 +654,9 @@ body#SurveyEngineBody {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+.JFEScope .dropzone .dz-preview .dz-details .dz-size, .JFEScope .dropzone .dz-preview .dz-details .dz-type {
+  display: none; }
 
 @-webkit-keyframes check {
   0% {

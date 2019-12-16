@@ -789,6 +789,34 @@ body#SurveyEngineBody {
     line-height: 1.63;
   }
 
+  .q-matrix  {
+    .table-cell {
+      color: $color-black;
+    }
+
+    th {
+      color: $color-black;
+    }
+
+    tbody {
+      td {
+        .q-radio {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .RO .DND li:nth-child(-1n+9) span.rank {
+    margin-right: 10px;
+  }
+
+}
+
+@media only screen and (min-width: 767px) {
+  .Skin .CS .VRTL li:hover, .Skin .Choice:hover, .Skin .ChoiceRow:hover, .Skin .RO .RB tr:hover {
+    background: #fff;
+  }
 }
 
 /* End .Skin */

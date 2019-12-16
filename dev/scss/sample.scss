@@ -131,7 +131,7 @@ body#SurveyEngineBody {
 
   .InnerInner {
     > fieldset > legend {
-      margin-bottom: 30px;
+      margin-bottom: 0 !important;
     }
   }
 
@@ -194,6 +194,10 @@ body#SurveyEngineBody {
       color: $color-black;
       line-height: 1.63;
     }
+
+    ol {
+      margin: 30px 0 0 0;
+    }
   }
 
   #SkinContent {
@@ -207,6 +211,7 @@ body#SurveyEngineBody {
     font-size: 16px;
     line-height: 1.63;
     overflow: visible;
+    padding-top: 30px;
 
     img {
       width: 100%;
@@ -745,6 +750,12 @@ body#SurveyEngineBody {
 
   .Separator {
     display: none;
+  }
+
+  .EndOfSurvey {
+    color: #3a3c42;
+    font-size: 16px;
+    line-height: 1.63;
   }
 
 }

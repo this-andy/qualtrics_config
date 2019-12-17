@@ -430,6 +430,15 @@ body#SurveyEngineBody {
       background: initial;
       color: $color-red;
     }
+
+    @media (max-width: 450px) {
+      display: flex;
+      flex-direction: column-reverse;
+
+      #NextButton {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   .QuestionOuter.Highlight .Inner {

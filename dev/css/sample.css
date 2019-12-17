@@ -209,6 +209,10 @@ body#SurveyEngineBody {
       background: #fefefe;
       border-radius: 6px;
       color: #3a3c42; }
+      .Skin label.MultipleAnswer.q-checked > span::before, .Skin label.MultipleAnswer.q-checked.q-focused > span::before, .Skin label.SingleAnswer.q-checked > span::before, .Skin label.SingleAnswer.q-checked.q-focused > span::before {
+        border-color: #dd0031 !important;
+        background: #dd0031 !important;
+        outline: none !important; }
       .Skin label.MultipleAnswer.q-checked:hover, .Skin label.MultipleAnswer.q-checked.q-focused:hover, .Skin label.SingleAnswer.q-checked:hover, .Skin label.SingleAnswer.q-checked.q-focused:hover {
         -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);

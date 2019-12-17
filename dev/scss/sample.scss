@@ -271,6 +271,11 @@ body#SurveyEngineBody {
       border-radius: 6px;
       color: $color-black;
 
+      > span::before {
+        border-color: $color-red !important;
+        background: $color-red !important;
+        outline: none !important;
+      }
 
       &:hover {
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);

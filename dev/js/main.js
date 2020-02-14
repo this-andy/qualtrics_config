@@ -72,6 +72,8 @@
         });
     });
 
+    $('select').wrap('<div class="select-input"></div>');
+
 
 
 })(jQuery);

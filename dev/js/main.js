@@ -72,7 +72,15 @@
         });
     });
 
-    $('select').wrap('<div class="select-input"></div>');
+    $('select').each(function () {
+
+        if (!$(this).closest('.select-input').length) {
+            $(this).wrap('<div class="select-input"></div>');
+        }
+
+    });
+
+
 
 
 

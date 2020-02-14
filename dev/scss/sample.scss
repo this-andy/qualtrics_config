@@ -340,6 +340,20 @@ body#SurveyEngineBody {
     }
   }
 
+  .select-input {
+    position: relative;
+
+    &:after {
+      background: url(../images/up.svg) no-repeat center / contain;
+      content: '';
+      width: 12px;
+      height: 7px;
+      position: absolute;
+      left: 300px;
+      top: 22px;
+    }
+  }
+
   select {
     appearance: none;
     background: #fefefe;
@@ -884,6 +898,10 @@ body#SurveyEngineBody {
     .dz-progress {
       display: block;
       opacity: 1;
+
+     .dz-upload {
+       background-color: #356904;
+     }
     }
   }
 }
@@ -895,7 +913,8 @@ body#SurveyEngineBody {
   overflow: hidden;
 
   .dz-upload {
-    background: $color-yellow;
+    background-color: $color-yellow;
+    transition: background-color 0.2s;
   }
 
   .dz-upload-back {

@@ -59,36 +59,36 @@ body#SurveyEngineBody {
   font-size: 16px;
   line-height: 26px;
   color: #3a3c42; }
-  .Skin #ProgressBar {
+  .Skin #ProgressBar .widget {
     background: #fff;
     width: 100%;
     max-width: 100%;
     margin: 0;
     padding: 15px;
     position: fixed; }
-    .Skin #ProgressBar table {
-      width: 100%;
-      max-width: 1185px; }
-    .Skin #ProgressBar .ProgressBarFillContainer {
-      height: 10px;
-      border-radius: 5px;
-      background: #d2d4d4; }
-    .Skin #ProgressBar tr td:first-child {
+  .Skin #ProgressBar table {
+    width: 100%;
+    max-width: 1185px; }
+  .Skin #ProgressBar .ProgressBarFillContainer {
+    height: 10px;
+    border-radius: 5px;
+    background: #d2d4d4; }
+  .Skin #ProgressBar tr td:first-child {
+    color: #3a3c42;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.63;
+    padding-right: 10px; }
+    .Skin #ProgressBar tr td:first-child + td + td {
       color: #3a3c42;
       font-size: 14px;
       font-weight: 400;
       line-height: 1.63;
-      padding-right: 10px; }
-      .Skin #ProgressBar tr td:first-child + td + td {
-        color: #3a3c42;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.63;
-        padding-left: 10px; }
-    .Skin #ProgressBar .ProgressBarFill {
-      background-color: #ffd959;
-      height: 10px;
-      border-radius: 5px; }
+      padding-left: 10px; }
+  .Skin #ProgressBar .ProgressBarFill {
+    background-color: #ffd959;
+    height: 10px;
+    border-radius: 5px; }
   .Skin #Questions {
     overflow: visible; }
   .Skin .QuestionOuter {
@@ -244,6 +244,16 @@ body#SurveyEngineBody {
     margin: 0 0 4px 0; }
   .Skin .MC .DL .QuestionBody {
     padding: 0 !important; }
+  .Skin .select-input {
+    position: relative; }
+    .Skin .select-input:after {
+      background: url(../images/up.svg) no-repeat center/contain;
+      content: '';
+      width: 12px;
+      height: 7px;
+      position: absolute;
+      left: 300px;
+      top: 22px; }
   .Skin select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -688,6 +698,8 @@ body#SurveyEngineBody {
   .JFEScope .dropzone .dz-preview.dz-image-preview.dz-complete .dz-progress {
     display: block;
     opacity: 1; }
+    .JFEScope .dropzone .dz-preview.dz-image-preview.dz-complete .dz-progress .dz-upload {
+      background-color: #356904; }
 
 .JFEScope .dropzone .dz-preview .dz-progress {
   background: #efefee;
@@ -695,7 +707,10 @@ body#SurveyEngineBody {
   border-radius: 4px;
   overflow: hidden; }
   .JFEScope .dropzone .dz-preview .dz-progress .dz-upload {
-    background: #ffd959; }
+    background-color: #ffd959;
+    -webkit-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s; }
   .JFEScope .dropzone .dz-preview .dz-progress .dz-upload-back {
     display: none; }
 

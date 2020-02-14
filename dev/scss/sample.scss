@@ -77,12 +77,15 @@ body#SurveyEngineBody {
   color: #3a3c42;
 
   #ProgressBar {
-    background: #fff;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 15px;
-    position: fixed;
+
+    .widget {
+      background: #fff;
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 15px;
+      position: fixed;
+    }
 
     table {
       width: 100%;

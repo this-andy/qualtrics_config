@@ -59,13 +59,15 @@ body#SurveyEngineBody {
   font-size: 16px;
   line-height: 26px;
   color: #3a3c42; }
-  .Skin #ProgressBar .widget {
+  .Skin #ProgressBar > div {
     background: #fff;
     width: 100%;
     max-width: 100%;
     margin: 0;
     padding: 15px;
-    position: fixed; }
+    position: fixed;
+    left: 0;
+    top: 0; }
   .Skin #ProgressBar table {
     width: 100%;
     max-width: 1185px; }
@@ -105,17 +107,23 @@ body#SurveyEngineBody {
     padding: 0;
     margin: 0; }
     .Skin .DB .QuestionText div {
-      font-size: 16px;
+      font-size: 24px;
       font-weight: 400;
       font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
       color: #3a3c42;
       line-height: 1.63; }
+    .Skin .DB .QuestionText p {
+      font-size: 16px; }
     .Skin .DB .QuestionText li {
-      font-size: 16px;
+      font-size: 24px;
       font-weight: 400;
       font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
       color: #3a3c42;
       line-height: 1.63; }
+    .Skin .DB .QuestionText .small {
+      font-size: 16px; }
+      .Skin .DB .QuestionText .small li {
+        font-size: 16px; }
   .Skin .QuestionText {
     font-family: "Brown-Bold", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 24px;
@@ -129,6 +137,10 @@ body#SurveyEngineBody {
       line-height: 1.15;
       letter-spacing: -0.66px;
       margin: 0 0 20px 0; }
+    .Skin .QuestionText h2 {
+      font-size: 24px; }
+    .Skin .QuestionText h3 {
+      font-size: 16px; }
     .Skin .QuestionText p {
       font-size: 16px;
       line-height: 1.63;
@@ -136,13 +148,17 @@ body#SurveyEngineBody {
       font-weight: 400;
       font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif; }
     .Skin .QuestionText li {
-      font-size: 16px;
+      font-size: 24px;
       font-weight: 400;
       font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
       color: #3a3c42;
       line-height: 1.63; }
     .Skin .QuestionText ol {
       margin: 30px 0 0 0; }
+    .Skin .QuestionText .small {
+      font-size: 16px; }
+      .Skin .QuestionText .small li {
+        font-size: 16px; }
   .Skin #SkinContent {
     max-width: 700px;
     margin: 0 auto;

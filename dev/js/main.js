@@ -80,7 +80,12 @@
 
     });
 
+    $('.MultipleAnswer.LabelPositionBELOW span').each(function () {
 
+        if (!$(this).closest('.wrap').length) {
+            $(this).wrap('<div class="wrap" style="text-align: center"></div>');
+        }
+    });
 
 
 

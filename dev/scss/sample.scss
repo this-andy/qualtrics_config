@@ -78,13 +78,15 @@ body#SurveyEngineBody {
 
   #ProgressBar {
 
-    .widget {
+    > div {
       background: #fff;
       width: 100%;
       max-width: 100%;
       margin: 0;
       padding: 15px;
       position: fixed;
+      left: 0;
+      top: 0;
     }
 
     table {
@@ -150,19 +152,31 @@ body#SurveyEngineBody {
       margin: 0;
 
       div {
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 400;
         font-family: $font-regular;
         color: $color-black;
         line-height: 1.63;
       }
 
-      li {
+      p {
         font-size: 16px;
+      }
+
+      li {
+        font-size: 24px;
         font-weight: 400;
         font-family: $font-regular;
         color: $color-black;
         line-height: 1.63;
+      }
+
+      .small {
+        font-size: 16px;
+
+        li {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -183,6 +197,14 @@ body#SurveyEngineBody {
       margin: 0 0 20px 0;
     }
 
+    h2 {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
     p {
       font-size: 16px;
       line-height: 1.63;
@@ -192,7 +214,7 @@ body#SurveyEngineBody {
     }
 
     li {
-      font-size: 16px;
+      font-size: 24px;
       font-weight: 400;
       font-family: $font-regular;
       color: $color-black;
@@ -201,6 +223,14 @@ body#SurveyEngineBody {
 
     ol {
       margin: 30px 0 0 0;
+    }
+
+    .small {
+      font-size: 16px;
+
+      li {
+        font-size: 16px;
+      }
     }
   }
 

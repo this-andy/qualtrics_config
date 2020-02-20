@@ -91,7 +91,7 @@
 
     $('.QuestionText').each(function () {
 
-        let questionStr = $('.QuestionText').text();
+        let questionStr = $(this).text();
 
         if (regex.test(questionStr)) {
             $(this).addClass('mandatory');

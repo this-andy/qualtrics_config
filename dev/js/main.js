@@ -91,10 +91,11 @@
 
     $('.QuestionText').each(function () {
 
-        let questionStr = $(this).text();
+        let questionStr = $(this).html();
 
         if (regex.test(questionStr)) {
             $(this).addClass('mandatory');
+            $(this).html(questionStr.replace('#mandatory#', ''));
         }
     });
 

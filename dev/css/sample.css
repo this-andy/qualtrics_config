@@ -159,6 +159,9 @@ body#SurveyEngineBody {
       font-size: 16px; }
       .Skin .QuestionText .small li {
         font-size: 16px; }
+    .Skin .QuestionText.mandatory label:after {
+      content: '*';
+      color: red; }
   .Skin #SkinContent {
     max-width: 700px;
     margin: 0 auto;

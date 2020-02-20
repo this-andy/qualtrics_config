@@ -232,6 +232,13 @@ body#SurveyEngineBody {
         font-size: 16px;
       }
     }
+
+    &.mandatory {
+      label:after {
+        content: '*';
+        color: red;
+      }
+    }
   }
 
   #SkinContent {

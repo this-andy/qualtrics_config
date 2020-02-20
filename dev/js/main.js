@@ -87,6 +87,15 @@
         }
     });
 
+    const regex = RegExp(/#mandatory#/gmi);
 
+    $('.QuestionText').each(function () {
+
+        let questionStr = $('.QuestionText').text();
+
+        if (regex.test(questionStr)) {
+            $(this).addClass('mandatory');
+        }
+    });
 
 })(jQuery);

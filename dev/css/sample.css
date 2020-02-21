@@ -159,9 +159,9 @@ body#SurveyEngineBody {
       font-size: 16px; }
       .Skin .QuestionText .small li {
         font-size: 16px; }
-    .Skin .QuestionText.mandatory label:after {
+    .Skin .QuestionText.mandatory label:before {
       content: '*';
-      color: red; }
+      color: #dd0031; }
   .Skin #SkinContent {
     max-width: 700px;
     margin: 0 auto;
@@ -718,7 +718,7 @@ body#SurveyEngineBody {
     display: block;
     opacity: 1; }
     .JFEScope .dropzone .dz-preview.dz-image-preview.dz-complete .dz-progress .dz-upload {
-      background-color: #356904; }
+      background: #356904; }
 
 .JFEScope .dropzone .dz-preview .dz-progress {
   background: #efefee;
@@ -726,10 +726,10 @@ body#SurveyEngineBody {
   border-radius: 4px;
   overflow: hidden; }
   .JFEScope .dropzone .dz-preview .dz-progress .dz-upload {
-    background-color: #ffd959;
-    -webkit-transition: background-color 0.2s;
-    -o-transition: background-color 0.2s;
-    transition: background-color 0.2s; }
+    background: #ffd959;
+    -webkit-transition: background 2s ease-in;
+    -o-transition: background 2s ease-in;
+    transition: background 2s ease-in; }
   .JFEScope .dropzone .dz-preview .dz-progress .dz-upload-back {
     display: none; }
 

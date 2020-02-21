@@ -937,7 +937,7 @@ body#SurveyEngineBody {
       opacity: 1;
 
      .dz-upload {
-       background-color: #356904;
+       background: #356904;
      }
     }
   }
@@ -950,8 +950,8 @@ body#SurveyEngineBody {
   overflow: hidden;
 
   .dz-upload {
-    background-color: $color-yellow;
-    transition: background-color 0.2s;
+    background: $color-yellow;
+    transition: background 2s ease-in;
   }
 
   .dz-upload-back {

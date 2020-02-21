@@ -234,9 +234,9 @@ body#SurveyEngineBody {
     }
 
     &.mandatory {
-      label:after {
+      label:before {
         content: '*';
-        color: red;
+        color: $color-red;
       }
     }
   }

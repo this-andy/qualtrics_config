@@ -35,7 +35,7 @@
             let target = $(mutation.target);
 
             moveValidation(target);
-            listenToCheckboxesChecked();
+            listenToCheckboxesChecked(target);
 
         });
     });

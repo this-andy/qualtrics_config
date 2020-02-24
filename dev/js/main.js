@@ -101,21 +101,17 @@
         }
     });
 
-    $('textarea[title="Other"]').each(function () {
-        $(this).hide();
-    });
+    $('textarea[title="Other"]').hide();
 
     function listenToCheckboxesChecked(target) {
-        console.log(target);
         if (target.hasClass('q-checked')) {
 
             let parent = target.closest('.Selection');
 
-            console.log(target);
-            console.log(target.text());
-
             if (target.text() === 'Other') {
                 parent.find('textarea[title="Other"]').show();
+            } else {
+                $('textarea[title="Other"]').hide();
             }
         }
     }

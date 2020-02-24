@@ -105,7 +105,7 @@
 
     function listenToCheckboxesChecked(target, oldValue) {
 
-        if (mutation.oldValue === 'q-checked') {
+        if (oldValue === 'q-checked') {
             find('textarea[title="Other"]').val('').hide();
         }
 

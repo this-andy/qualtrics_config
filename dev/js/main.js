@@ -105,6 +105,7 @@
     });
 
     function listenToCheckboxesChecked(target) {
+        console.log(target);
         if (target.hasClass('q-checked')) {
 
             let parent = target.closest('.Selection');

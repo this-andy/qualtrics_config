@@ -107,9 +107,9 @@
 
     function listenToCheckboxesChecked(target, oldValue) {
 
-        console.log(oldValue);
+        const regex = RegExp(/q-checked/gmi);
 
-        if (oldValue === 'q-checked') {
+        if (regex.test(oldValue)) {
             find('textarea[title="Other"]').val('').hide();
         }
 

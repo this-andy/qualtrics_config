@@ -177,6 +177,8 @@ body#SurveyEngineBody {
       max-width: 100%;
       height: auto !important;
       border-radius: 6px; }
+    .Skin .QuestionBody .Choice img {
+      width: auto; }
     @media (max-width: 770px) {
       .Skin .QuestionBody {
         padding: 0 !important; } }
@@ -319,7 +321,8 @@ body#SurveyEngineBody {
     font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 16px;
     color: #3a3c42;
-    width: 100% !important; }
+    width: 100% !important;
+    padding: 9px 20px !important; }
   .Skin .dropzone {
     background: #fff;
     border: 1px dashed #d2d4d3;
@@ -667,6 +670,13 @@ body#SurveyEngineBody {
     margin-top: 5px; }
   .Skin .RO .DND li:nth-child(-1n+9) span.rank {
     margin-right: 10px; }
+  .Skin #Plug {
+    position: fixed;
+    right: 0;
+    bottom: 0; }
+    @media (max-width: 768px) {
+      .Skin #Plug {
+        position: relative; } }
 
 @media only screen and (min-width: 767px) {
   .Skin .CS .VRTL li:hover, .Skin .Choice:hover, .Skin .ChoiceRow:hover, .Skin .RO .RB tr:hover {

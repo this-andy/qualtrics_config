@@ -108,9 +108,8 @@
         if (target.hasClass('q-checked')) {
 
             let parent = target.closest('.Selection');
-            let label = parent.find('.MultipleAnswer');
 
-            if (label.text() === 'Other') {
+            if (target.text() === 'Other') {
                 parent.find('textarea[title="Other"]').show();
             }
         }

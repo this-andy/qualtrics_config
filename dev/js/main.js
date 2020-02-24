@@ -35,7 +35,7 @@
             let target = $(mutation.target);
 
             moveValidation(target);
-            listenToCheckboxesChecked(target);
+            listenToCheckboxesChecked(target, mutation.oldValue);
 
         });
     });
@@ -103,7 +103,11 @@
 
     $('textarea[title="Other"]').hide();
 
-    function listenToCheckboxesChecked(target) {
+    function listenToCheckboxesChecked(target, oldValue) {
+
+        if (mutation.oldValue === 'q-checked') {
+            find('textarea[title="Other"]').val('').hide();
+        }
 
         if (target.hasClass('q-checked')) {
 
@@ -112,8 +116,6 @@
             if (target.text() === 'Other') {
                 parent.find('textarea[title="Other"]').show();
             }
-        } else {
-            $('textarea[title="Other"]').val('').hide();
         }
     }
 

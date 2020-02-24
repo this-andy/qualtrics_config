@@ -104,14 +104,15 @@
     $('textarea[title="Other"]').hide();
 
     function listenToCheckboxesChecked(target) {
-        if (target.hasClass('q-checked')) {
 
-            let parent = target.closest('.Selection');
+        let parent = target.closest('.Selection');
+
+        parent.find('textarea[title="Other"]').value('').hide();
+
+        if (target.hasClass('q-checked')) {
 
             if (target.text() === 'Other') {
                 parent.find('textarea[title="Other"]').show();
-            } else {
-                $('textarea[title="Other"]').hide();
             }
         }
     }

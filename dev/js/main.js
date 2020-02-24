@@ -107,7 +107,7 @@
 
         let parent = target.closest('.Selection');
 
-        parent.find('textarea[title="Other"]').value('').hide();
+        parent.find('textarea[title="Other"]').val('').hide();
 
         if (target.hasClass('q-checked')) {
 

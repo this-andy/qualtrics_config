@@ -44,7 +44,8 @@
     observer.observe(document, {
         subtree: true,
         childList: true,
-        attributes: true
+        attributes: true,
+        attributeOldValue: true
     });
 
     /**

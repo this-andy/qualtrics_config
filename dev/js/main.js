@@ -110,7 +110,7 @@
         const regex = RegExp(/q-checked/gmi);
 
         if (regex.test(oldValue)) {
-            find('textarea[title="Other"]').val('').hide();
+            $('textarea[title="Other"]').val('').hide();
         }
 
         if (target.hasClass('q-checked')) {

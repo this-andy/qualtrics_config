@@ -28,11 +28,11 @@
      */
     MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
 
-    var observer = new MutationObserver(function(mutations, observer) {
+    let observer = new MutationObserver(function(mutations, observer) {
 
         mutations.forEach(function(mutation) {
 
-            var target = $(mutation.target);
+            let target = $(mutation.target);
 
             moveValidation(target);
 
@@ -50,7 +50,7 @@
      */
     function moveValidation(target) {
         if (target.hasClass('ValidationError')) {
-            var input = target.closest('.QuestionOuter').find('.QuestionBody');
+            let input = target.closest('.QuestionOuter').find('.QuestionBody');
 
             target.appendTo(input);
         }
@@ -61,7 +61,7 @@
      */
     $('.SACOL tr').each(function () {
 
-        var maxHeight = 0;
+        let maxHeight = 0;
 
         $(this).find('td').each(function () {
             maxHeight = $(this).height() > maxHeight ? $(this).height() : maxHeight;
@@ -96,6 +96,19 @@
         if (regex.test(questionStr)) {
             $(this).addClass('mandatory');
             $(this).html(questionStr.replace('#mandatory#', ''));
+        }
+    });
+
+    $('textarea[title="Other"]').each(function () {
+        $(this).hide();
+    });
+
+    $(document).on('change', 'input[type="checkbox"]', function () {
+        let parent = $(this).closest('.Selection');
+        let label = parent.find('.MultipleAnswer');
+
+        if (label.text() === 'Other') {
+            parent.find('textarea[title="Other"]').show();
         }
     });
 

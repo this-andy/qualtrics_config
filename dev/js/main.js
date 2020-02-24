@@ -35,6 +35,7 @@
             let target = $(mutation.target);
 
             moveValidation(target);
+            listenToCheckboxesChecked();
 
         });
     });
@@ -103,13 +104,16 @@
         $(this).hide();
     });
 
-    $(document).on('change', 'input[type="checkbox"]', function () {
-        let parent = $(this).closest('.Selection');
-        let label = parent.find('.MultipleAnswer');
+    function listenToCheckboxesChecked(target) {
+        if (target.hasClass('q-checked')) {
 
-        if (label.text() === 'Other') {
-            parent.find('textarea[title="Other"]').show();
+            let parent = target.closest('.Selection');
+            let label = parent.find('.MultipleAnswer');
+
+            if (label.text() === 'Other') {
+                parent.find('textarea[title="Other"]').show();
+            }
         }
-    });
+    }
 
 })(jQuery);

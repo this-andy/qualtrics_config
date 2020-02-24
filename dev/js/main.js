@@ -32,6 +32,7 @@
 
         mutations.forEach(function(mutation) {
 
+            console.log(mutation);
             let target = $(mutation.target);
 
             moveValidation(target);
@@ -104,6 +105,8 @@
     $('textarea[title="Other"]').hide();
 
     function listenToCheckboxesChecked(target, oldValue) {
+
+        console.log(oldValue);
 
         if (oldValue === 'q-checked') {
             find('textarea[title="Other"]').val('').hide();

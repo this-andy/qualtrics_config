@@ -415,7 +415,7 @@ body#SurveyEngineBody {
     background: #fefefe;
     border-radius: 6px;
     border: solid 1px #d2d4d3;
-    padding: 9px 20px;
+    padding: 14px 20px !important;
     font-family: $font-regular;
     font-size: 16px;
     color: $color-black;
@@ -440,12 +440,13 @@ body#SurveyEngineBody {
     background: #fefefe;
     border-radius: 6px;
     border: solid 1px #d2d4d3;
+    border-color: #d2d4d3 !important;
     height: 180px;
     font-family: $font-regular;
     font-size: 16px;
     color: $color-black;
     width: 100% !important;
-    padding: 9px 20px !important;
+    padding: 14px 20px !important;
   }
 
   .dropzone {
@@ -458,7 +459,6 @@ body#SurveyEngineBody {
       color: $color-black;
       font-size: 16px;
       line-height: 1.75;
-      opacity: 0.4;
     }
 
     &:hover {
@@ -904,7 +904,7 @@ body#SurveyEngineBody {
       border: 0 !important;
     }
 
-    .choice {
+    .Choice {
       background: #fff;
       border-bottom: 4px solid #efefee;
     }

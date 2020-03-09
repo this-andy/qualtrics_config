@@ -103,7 +103,7 @@
         }
     });
 
-    $('textarea[title="Other"]').hide();
+    $('textarea[title="Other"], input[title="Other"]').hide();
 
     function listenToCheckboxesChecked(target, oldValue) {
 
@@ -111,7 +111,7 @@
 
         if (regex.test(oldValue)) {
             let parent = target.closest('.Selection');
-            parent.find('textarea[title="Other"]').val('').hide();
+            parent.find('textarea[title="Other"], input[title="Other"]').val('').hide();
         }
 
         if (target.hasClass('q-checked')) {
@@ -119,7 +119,7 @@
             let parent = target.closest('.Selection');
 
             if (target.text() === 'Other') {
-                parent.find('textarea[title="Other"]').show();
+                parent.find('textarea[title="Other"], input[title="Other"]').show();
             }
         }
     }

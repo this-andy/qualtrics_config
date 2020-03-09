@@ -295,7 +295,7 @@ body#SurveyEngineBody {
     background: #fefefe;
     border-radius: 6px;
     border: solid 1px #d2d4d3;
-    padding: 9px 20px;
+    padding: 14px 20px !important;
     font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 16px;
     color: #3a3c42;
@@ -317,12 +317,13 @@ body#SurveyEngineBody {
     background: #fefefe;
     border-radius: 6px;
     border: solid 1px #d2d4d3;
+    border-color: #d2d4d3 !important;
     height: 180px;
     font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 16px;
     color: #3a3c42;
     width: 100% !important;
-    padding: 9px 20px !important; }
+    padding: 14px 20px !important; }
   .Skin .dropzone {
     background: #fff;
     border: 1px dashed #d2d4d3;
@@ -331,8 +332,7 @@ body#SurveyEngineBody {
       font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
       color: #3a3c42;
       font-size: 16px;
-      line-height: 1.75;
-      opacity: 0.4; }
+      line-height: 1.75; }
     .Skin .dropzone:hover {
       background: #fff; }
   @media (min-width: 770px) {
@@ -682,7 +682,7 @@ body#SurveyEngineBody {
     margin-top: 40px; }
     .Skin table.ChoiceStructure th, .Skin table.ChoiceStructure td {
       border: 0 !important; }
-    .Skin table.ChoiceStructure .choice {
+    .Skin table.ChoiceStructure .Choice {
       background: #fff;
       border-bottom: 4px solid #efefee; }
     .Skin table.ChoiceStructure .RepeatHeader td {

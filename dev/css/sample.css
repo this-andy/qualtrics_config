@@ -631,7 +631,8 @@ body#SurveyEngineBody {
   .Skin label.q-radio {
     border-color: #dd0031;
     -webkit-animation: none !important;
-    animation: none !important; }
+    animation: none !important;
+    cursor: pointer; }
     .Skin label.q-radio.q-checked {
       background-color: #dd0031;
       border-color: #dd0031; }
@@ -677,6 +678,17 @@ body#SurveyEngineBody {
     @media (max-width: 768px) {
       .Skin #Plug {
         position: relative; } }
+  .Skin table.ChoiceStructure {
+    margin-top: 40px; }
+    .Skin table.ChoiceStructure th, .Skin table.ChoiceStructure td {
+      border: 0 !important; }
+    .Skin table.ChoiceStructure .choice {
+      background: #fff;
+      border-bottom: 4px solid #efefee; }
+    .Skin table.ChoiceStructure .RepeatHeader td {
+      padding: 40px 0; }
+  .Skin .SBS .QuestionBody {
+    color: #3a3c42; }
 
 @media only screen and (min-width: 767px) {
   .Skin .CS .VRTL li:hover, .Skin .Choice:hover, .Skin .ChoiceRow:hover, .Skin .RO .RB tr:hover {

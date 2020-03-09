@@ -822,6 +822,7 @@ body#SurveyEngineBody {
   label.q-radio {
     border-color: $color-red;
     animation: none !important;
+    cursor: pointer;
 
     &.q-checked {
       background-color: $color-red;
@@ -894,6 +895,29 @@ body#SurveyEngineBody {
     @media (max-width: 768px) {
       position: relative;
     }
+  }
+
+  table.ChoiceStructure {
+    margin-top: 40px;
+
+    th, td {
+      border: 0 !important;
+    }
+
+    .choice {
+      background: #fff;
+      border-bottom: 4px solid #efefee;
+    }
+
+    .RepeatHeader {
+      td {
+        padding: 40px 0;
+      }
+    }
+  }
+
+  .SBS .QuestionBody {
+    color: #3a3c42;
   }
 }
 

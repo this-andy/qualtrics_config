@@ -369,8 +369,27 @@ body#SurveyEngineBody {
       -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
       flex-direction: column-reverse; }
-      .Skin #Buttons #NextButton {
+      .Skin #Buttons #NextButton, .Skin #Buttons .btn:first-of-type {
         margin-bottom: 20px; } }
+  .Skin .btn {
+    border-radius: 25px;
+    background: #dd0031;
+    color: #fff;
+    border: 2px solid #dd0031;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    padding: 15px 40px; }
+    .Skin .btn:hover, .Skin .btn:active, .Skin .btn:focus {
+      background: #fff;
+      color: #dd0031;
+      border-color: #dd0031; }
+    .Skin .btn.prev-btn {
+      background: initial;
+      color: #dd0031; }
   .Skin .QuestionOuter.Highlight .Inner {
     border: none; }
   .Skin .QuestionOuter .Inner {

@@ -501,12 +501,35 @@ body#SurveyEngineBody {
       display: flex;
       flex-direction: column-reverse;
 
-      #NextButton {
+      #NextButton, .btn:first-of-type {
         margin-bottom: 20px;
       }
     }
   }
 
+  .btn {
+    border-radius: 25px;
+    background: $color-red;
+    color: #fff;
+    border: 2px solid $color-red;
+    transition: all 0.2s ease-in;
+    font-family: $font-regular;
+    font-size: 16px;
+    line-height: normal;
+    padding: 15px 40px;
+
+    &:hover, &:active, &:focus {
+      background: #fff;
+      color: $color-red;
+      border-color: $color-red;
+    }
+
+    &.prev-btn {
+      background: initial;
+      color: $color-red;
+    }
+  }
+  
   .QuestionOuter.Highlight .Inner {
     border: none;
   }

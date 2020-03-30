@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="32px" viewBox="0 0 24 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>file-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="question-types-desktop" transform="translate(-340.000000, -4321.000000)">
+            <g id="file-upload" transform="translate(252.000000, 4075.000000)">
+                <g id="all" transform="translate(50.000000, 212.000000)">
+                    <g id="Group-5" transform="translate(20.000000, 20.000000)">
+                        <g id="file-icon" transform="translate(19.000000, 15.000000)">
+                            <path d="M0.98514881,24.95583 L0.98514881,2.45073 C0.98514881,1.15293 2.04735119,0.09153 3.34556548,0.09153 L19.0050893,0.09153 C20.3033036,0.09153 21.365506,1.15293 21.365506,2.45073 L21.365506,27.37143 C21.365506,28.66863 20.3033036,29.73003 19.0050893,29.73003 L5.863125,29.73003" id="Stroke-1" stroke="#393B42" stroke-width="1.98299997" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.76119048,8.42742 L17.5918452,8.42742" id="Stroke-3" stroke="#393B42" stroke-width="1.98299997" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.76119048,14.91069 L17.5918452,14.91069" id="Stroke-5" stroke="#393B42" stroke-width="1.98299997" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.76119048,21.39423 L17.5918452,21.39423" id="Stroke-7" stroke="#393B42" stroke-width="1.98299997" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M1.96809524,24.95451 C1.96809524,25.50261 1.52761905,25.94661 0.984166667,25.94661 C0.440416667,25.94661 0.000238095238,25.50261 0.000238095238,24.95451 C0.000238095238,24.40701 0.440416667,23.96271 0.984166667,23.96271 C1.52761905,23.96271 1.96809524,24.40701 1.96809524,24.95451" id="Fill-9" fill="#DC0A33"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -124,6 +124,22 @@ function addNextPrevTabButtons() {
     buttonsDiv.insertBefore(newButton, buttonsDiv.childNodes[0]);
 }
 
+function addFinishedButton() {
+    var buttonsDiv = document.getElementById('Buttons');
+
+    var newButton = document.createElement('Input');
+    newButton.type = 'button';
+    newButton.id = 'FinishedButton';
+    newButton.className = "btn";
+    newButton.value = "Finished";
+    newButton.onclick = function(){FinishLoop()};
+    buttonsDiv.insertBefore(newButton, buttonsDiv.childNodes[1]);
+}
+
+function FinishLoop() {
+	Qualtrics.SurveyEngine.setEmbeddedData('finish_loop', 'true');
+}
+
 function showOrHideNext(hideQuestionButton) {
 	showOrHideElementById('NextQuestionButton', hideQuestionButton);
 	showOrHideElementById('NextButton', !hideQuestionButton);

@@ -694,7 +694,7 @@ body#SurveyEngineBody {
   .Skin .RO .DND li:nth-child(-1n+9) span.rank {
     margin-right: 10px; }
   .Skin #Plug {
-    position: fixed;
+    position: relative;
     right: 0;
     bottom: 0; }
     @media (max-width: 768px) {

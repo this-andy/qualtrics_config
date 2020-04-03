@@ -124,4 +124,6 @@
         }
     }
 
+    parent.scrollTo(0,0);
+
 })(jQuery);

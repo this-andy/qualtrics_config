@@ -126,4 +126,8 @@
 
     parent.scrollTo(0,0);
 
+    Qualtrics.SurveyEngine.addOnPageSubmit(function(type) {
+        parent.scrollTo(0,0);
+    });
+
 })(jQuery);

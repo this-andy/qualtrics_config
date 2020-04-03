@@ -123,10 +123,10 @@
         }
     }
 
-    parent.scrollTo(0,0);
+    window.iFrameResizer.scrollTo(0,0);
 
     Qualtrics.SurveyEngine.addOnReady(function(type) {
-        parent.scrollTo(0,0);
+        window.iFrameResizer.scrollTo(0,0);
     });
 
 })(jQuery);

@@ -129,6 +129,7 @@
 
     Qualtrics.SurveyEngine.addOnReady(function(type) {
         if ('parentIFrame' in window) {
+            console.log('scroll');
             parentIFrame.scrollTo(0,0)
         }
     });

@@ -32,7 +32,6 @@
 
         mutations.forEach(function(mutation) {
 
-            console.log(mutation);
             let target = $(mutation.target);
 
             moveValidation(target);
@@ -126,7 +125,7 @@
 
     parent.scrollTo(0,0);
 
-    Qualtrics.SurveyEngine.addOnPageSubmit(function(type) {
+    Qualtrics.SurveyEngine.addOnReady(function(type) {
         parent.scrollTo(0,0);
     });
 

@@ -76,6 +76,10 @@ body#SurveyEngineBody {
   line-height: 26px;
   color: #3a3c42;
 
+  #Wrapper {
+    margin: 0 auto;
+  }
+
   #ProgressBar {
 
     > div {
@@ -243,7 +247,7 @@ body#SurveyEngineBody {
   #SkinContent {
     max-width: 700px;
     margin: 0 auto;
-    padding: 100px 20px;
+    padding: 5vh 20px;
   }
 
   .QuestionBody {

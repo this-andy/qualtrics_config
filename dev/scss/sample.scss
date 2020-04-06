@@ -147,13 +147,55 @@ body#SurveyEngineBody {
 
   .DB {
     .QuestionText {
-      font-family: $font-bold;
-      font-size: 24px;
-      font-weight: bold;
       color: $color-black;
-      line-height: 1.29;
       padding: 0;
       margin: 0;
+      font-size: 16px;
+      line-height: 1.63;
+      font-weight: 400;
+      font-family: $font-regular;
+
+      h1, h2 {
+        color: $color-black;
+        font-size: 38px;
+        line-height: 1.15;
+        letter-spacing: -0.66px;
+        margin: 0 0 20px 0;
+      }
+
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      h3 {
+        color: $color-black;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.63;
+        margin: 0 0 20px 0;
+      }
+
+      p {
+        color: $color-black;
+        font-size: 16px;
+        line-height: 1.63;
+        margin: 0 0 30px 0;
+        font-weight: 400;
+        font-family: $font-regular;
+      }
+
+      li {
+        color: $color-black;
+        font-size: 16px;
+        line-height: 1.63;
+        font-weight: 400;
+        font-family: $font-regular;
+      }
+
+      ol {
+        margin: 30px 0 0 0;
+      }
 
       div {
         font-size: 24px;
@@ -162,19 +204,7 @@ body#SurveyEngineBody {
         color: $color-black;
         line-height: 1.63;
       }
-
-      p {
-        font-size: 16px;
-      }
-
-      li {
-        font-size: 24px;
-        font-weight: 400;
-        font-family: $font-regular;
-        color: $color-black;
-        line-height: 1.63;
-      }
-
+      
       .small {
         font-size: 16px;
 

@@ -101,22 +101,44 @@ body#SurveyEngineBody {
   .Skin .InnerInner > fieldset > legend {
     margin-bottom: 0 !important; }
   .Skin .DB .QuestionText {
-    font-family: "Brown-Bold", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
     color: #3a3c42;
-    line-height: 1.29;
     padding: 0;
-    margin: 0; }
-    .Skin .DB .QuestionText div {
-      font-size: 24px;
-      font-weight: 400;
-      font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.63;
+    font-weight: 400;
+    font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    .Skin .DB .QuestionText h1, .Skin .DB .QuestionText h2 {
       color: #3a3c42;
-      line-height: 1.63; }
+      font-size: 38px;
+      line-height: 1.15;
+      letter-spacing: -0.66px;
+      margin: 0 0 20px 0; }
+    .Skin .DB .QuestionText h2 {
+      font-size: 24px;
+      font-weight: bold; }
+    .Skin .DB .QuestionText h3 {
+      color: #3a3c42;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.63;
+      margin: 0 0 20px 0; }
     .Skin .DB .QuestionText p {
-      font-size: 16px; }
+      color: #3a3c42;
+      font-size: 16px;
+      line-height: 1.63;
+      margin: 0 0 30px 0;
+      font-weight: 400;
+      font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif; }
     .Skin .DB .QuestionText li {
+      color: #3a3c42;
+      font-size: 16px;
+      line-height: 1.63;
+      font-weight: 400;
+      font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    .Skin .DB .QuestionText ol {
+      margin: 30px 0 0 0; }
+    .Skin .DB .QuestionText div {
       font-size: 24px;
       font-weight: 400;
       font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;

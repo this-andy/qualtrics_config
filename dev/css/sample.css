@@ -114,6 +114,8 @@ body#SurveyEngineBody {
       line-height: 1.15;
       letter-spacing: -0.66px;
       margin: 0 0 20px 0; }
+      .Skin .DB .QuestionText h1:last-child, .Skin .DB .QuestionText h2:last-child {
+        margin-bottom: 0; }
     .Skin .DB .QuestionText h2 {
       font-size: 24px;
       font-weight: bold; }
@@ -123,6 +125,8 @@ body#SurveyEngineBody {
       font-weight: bold;
       line-height: 1.63;
       margin: 0 0 20px 0; }
+      .Skin .DB .QuestionText h3:last-child {
+        margin-bottom: 0; }
     .Skin .DB .QuestionText p {
       color: #3a3c42;
       font-size: 16px;
@@ -130,6 +134,8 @@ body#SurveyEngineBody {
       margin: 0 0 30px 0;
       font-weight: 400;
       font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .Skin .DB .QuestionText p:last-child {
+        margin-bottom: 0; }
     .Skin .DB .QuestionText li {
       color: #3a3c42;
       font-size: 16px;
@@ -162,6 +168,8 @@ body#SurveyEngineBody {
       line-height: 1.15;
       letter-spacing: -0.66px;
       margin: 0 0 20px 0; }
+      .Skin .QuestionText h1:last-child, .Skin .QuestionText h2:last-child {
+        margin-bottom: 0; }
     .Skin .QuestionText h2 {
       font-size: 24px;
       font-weight: bold; }
@@ -171,6 +179,8 @@ body#SurveyEngineBody {
       font-weight: bold;
       line-height: 1.63;
       margin: 0 0 20px 0; }
+      .Skin .QuestionText h3:last-child {
+        margin-bottom: 0; }
     .Skin .QuestionText p {
       color: #3a3c42;
       font-size: 16px;
@@ -178,6 +188,8 @@ body#SurveyEngineBody {
       margin: 0 0 30px 0;
       font-weight: 400;
       font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .Skin .QuestionText p:last-child {
+        margin-bottom: 0; }
     .Skin .QuestionText li {
       color: #3a3c42;
       font-size: 16px;

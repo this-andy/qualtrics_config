@@ -161,6 +161,10 @@ body#SurveyEngineBody {
         line-height: 1.15;
         letter-spacing: -0.66px;
         margin: 0 0 20px 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
 
       h2 {
@@ -174,6 +178,10 @@ body#SurveyEngineBody {
         font-weight: bold;
         line-height: 1.63;
         margin: 0 0 20px 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
 
       p {
@@ -183,6 +191,10 @@ body#SurveyEngineBody {
         margin: 0 0 30px 0;
         font-weight: 400;
         font-family: $font-regular;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
 
       li {
@@ -230,6 +242,10 @@ body#SurveyEngineBody {
       line-height: 1.15;
       letter-spacing: -0.66px;
       margin: 0 0 20px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     h2 {
@@ -243,6 +259,10 @@ body#SurveyEngineBody {
       font-weight: bold;
       line-height: 1.63;
       margin: 0 0 20px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     p {
@@ -252,6 +272,10 @@ body#SurveyEngineBody {
       margin: 0 0 30px 0;
       font-weight: 400;
       font-family: $font-regular;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     li {

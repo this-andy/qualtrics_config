@@ -197,6 +197,12 @@ body#SurveyEngineBody {
         }
       }
 
+      ul {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
       li {
         color: $color-black;
         font-size: 16px;
@@ -273,6 +279,12 @@ body#SurveyEngineBody {
       font-weight: 400;
       font-family: $font-regular;
 
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    ul {
       &:last-child {
         margin-bottom: 0;
       }

@@ -136,6 +136,8 @@ body#SurveyEngineBody {
       font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .Skin .DB .QuestionText p:last-child {
         margin-bottom: 0; }
+    .Skin .DB .QuestionText ul:last-child {
+      margin-bottom: 0; }
     .Skin .DB .QuestionText li {
       color: #3a3c42;
       font-size: 16px;
@@ -190,6 +192,8 @@ body#SurveyEngineBody {
       font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .Skin .QuestionText p:last-child {
         margin-bottom: 0; }
+    .Skin .QuestionText ul:last-child {
+      margin-bottom: 0; }
     .Skin .QuestionText li {
       color: #3a3c42;
       font-size: 16px;

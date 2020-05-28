@@ -296,8 +296,7 @@ body#SurveyEngineBody {
     width: 10px;
     height: 8px;
     position: absolute;
-    left: 25px;
-    top: 22px; }
+    left: 25px; }
   .Skin label.SingleAnswer.q-checked > span::before, .Skin label.SingleAnswer.q-checked.q-focused > span::before {
     border-color: #dd0031 !important;
     background: #dd0031 !important;

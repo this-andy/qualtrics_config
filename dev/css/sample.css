@@ -208,7 +208,7 @@ body#SurveyEngineBody {
   .Skin #SkinContent {
     max-width: 700px;
     margin: 0 auto;
-    padding: 5vh 20px; }
+    padding: 20px; }
   .Skin .QuestionBody {
     color: #3a3c42;
     font-size: 16px;

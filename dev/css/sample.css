@@ -336,9 +336,9 @@ body#SurveyEngineBody {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: #fefefe;
-    border-radius: 6px;
-    border: solid 1px #d2d4d3;
+    background: #fefefe !important;
+    border-radius: 6px !important;
+    border: solid 1px #d2d4d3 !important;
     padding: 14px 20px !important;
     font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 16px;
@@ -358,7 +358,7 @@ body#SurveyEngineBody {
     .Skin input[type="text"].FailedValidation, .Skin .InputText.FailedValidation, .Skin .TE .SL .InputText.FailedValidation, .Skin .TE .ML .InputText.FailedValidation {
       border-color: #dd0031; }
   .Skin textarea, .Skin .TE textarea, .Skin .TE .ML textarea, .Skin .MC .TextEntryBox, .Skin .TextEntryBox {
-    background: #fefefe;
+    background: #fefefe !important;
     border-radius: 6px;
     border: solid 1px #d2d4d3;
     border-color: #d2d4d3 !important;

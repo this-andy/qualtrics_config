@@ -342,7 +342,7 @@ body#SurveyEngineBody {
     padding: 14px 20px !important;
     font-family: "Brown-Regular", sans-serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 16px;
-    color: #3a3c42;
+    color: #3a3c42 !important;
     width: 100% !important;
     -webkit-transition: -webkit-box-shadow 400ms;
     transition: -webkit-box-shadow 400ms;

@@ -491,7 +491,7 @@ body#SurveyEngineBody {
     padding: 14px 20px !important;
     font-family: $font-regular;
     font-size: 16px;
-    color: $color-black;
+    color: $color-black !important;
     width: 100% !important;
     transition: box-shadow 400ms;
 

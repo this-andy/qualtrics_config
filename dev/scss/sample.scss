@@ -1180,8 +1180,8 @@ body#SurveyEngineBody {
       order: 1;
     }
 
-    .Skin .Slider .HSLIDER .horizontalbar td.BarOuter {
-      padding-bottom: 20px;
+    td.BarOuter {
+      padding-bottom: 20px !important;
     }
   }
 }

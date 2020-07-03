@@ -1186,7 +1186,7 @@ body#SurveyEngineBody {
     order: 1; }
   .q-slider .horizontalbar td.BarOuter {
     padding-bottom: 20px !important; }
-  .q-slider .horizontalbar .numbers {
-    color: #ef0029; }
+  .q-slider .horizontalbar .numbers li {
+    color: #ef0029 !important; }
 
 /* end of Rubber Cheese overrides */

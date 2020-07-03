@@ -1188,5 +1188,8 @@ body#SurveyEngineBody {
     padding-bottom: 20px !important; }
   .q-slider .horizontalbar .numbers li {
     color: #ef0029 !important; }
+  .q-slider .horizontalbar .Slider .handle {
+    background-color: #ef0029 !important;
+    border-color: #ef0029 !important; }
 
 /* end of Rubber Cheese overrides */

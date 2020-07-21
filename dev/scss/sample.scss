@@ -1199,4 +1199,9 @@ body#SurveyEngineBody {
   }
 }
 
+.JFEScope .ui-state-active, .JFEScope .ui-widget-content .ui-state-active, .JFEScope .ui-widget-header .ui-state-active {
+  border: 1px solid #DD0031;
+  background: #DD0031;
+}
+
 /* end of Rubber Cheese overrides */

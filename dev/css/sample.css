@@ -1198,4 +1198,7 @@ body#SurveyEngineBody {
   border: 1px solid #DD0031;
   background: #DD0031; }
 
+h3.ui-accordion-header {
+  margin-bottom: 0; }
+
 /* end of Rubber Cheese overrides */

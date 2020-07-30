@@ -1199,6 +1199,7 @@ body#SurveyEngineBody {
   background: #DD0031; }
 
 h3.ui-accordion-header {
-  margin-bottom: 0 !important; }
+  margin-bottom: 0 !important;
+  margin-top: 2px !important; }
 
 /* end of Rubber Cheese overrides */

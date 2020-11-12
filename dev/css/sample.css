@@ -1216,9 +1216,9 @@ h3.ui-accordion-header {
   align-items: center; }
 
 .ChoiceStructure .RankInput {
-  -webkit-flex-basis: 100px;
-  -ms-flex-preferred-size: 100px;
-  flex-basis: 100px; }
+  -webkit-flex-basis: 50px;
+  -ms-flex-preferred-size: 50px;
+  flex-basis: 50px; }
 
 .ChoiceStructure span {
   padding-left: 10px; }

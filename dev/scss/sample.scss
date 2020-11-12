@@ -1226,6 +1226,19 @@ h3.ui-accordion-header {
   span {
     padding-left: 10px;
   }
+
+  .LabelWrapper {
+    display: flex;
+    align-items: center;
+
+    label {
+      padding-right: 10px;
+    }
+
+    .TextEntryBox {
+      height: auto;
+    }
+  }
 }
 
 /* end of Rubber Cheese overrides */

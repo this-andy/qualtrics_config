@@ -104,7 +104,7 @@
         }
     });
 
-    $('textarea[title="Other"], input[title="Other"]').hide();
+    $('textarea[title="Other"], input[title="Other"]:not(.QR-QID2-12-TEXT)').hide();
 
     function listenToCheckboxesChecked(target, oldValue) {
 

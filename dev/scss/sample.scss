@@ -1213,4 +1213,19 @@ h3.ui-accordion-header {
   list-style-type: circle;
 }
 
+.ChoiceStructure {
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  .RankInput {
+    flex-basis: 100px;
+  }
+
+  span {
+    padding-left: 10px;
+  }
+}
+
 /* end of Rubber Cheese overrides */

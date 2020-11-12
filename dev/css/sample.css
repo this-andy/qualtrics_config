@@ -1233,7 +1233,7 @@ h3.ui-accordion-header {
   -ms-flex-align: center;
   align-items: center; }
   .ChoiceStructure .LabelWrapper label {
-    padding-right: 10px; }
+    padding-right: 20px; }
   .ChoiceStructure .LabelWrapper .TextEntryBox {
     height: auto; }
 

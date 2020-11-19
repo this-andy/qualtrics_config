@@ -1218,10 +1218,10 @@ h3.ui-accordion-header {
   padding-left: 10px; }
 
 .ChoiceStructure .LabelWrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;

@@ -1215,10 +1215,12 @@ h3.ui-accordion-header {
   -ms-flex-align: center;
   align-items: center; }
 
-.ChoiceStructure .RankInput {
+.ChoiceStructure input[type=text].RankInput {
   -webkit-flex-basis: 50px;
   -ms-flex-preferred-size: 50px;
-  flex-basis: 50px; }
+  flex-basis: 50px;
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
 
 .ChoiceStructure span {
   padding-left: 10px; }

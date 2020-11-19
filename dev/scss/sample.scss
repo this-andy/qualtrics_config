@@ -1219,8 +1219,10 @@ h3.ui-accordion-header {
     align-items: center;
   }
 
-  .RankInput {
+  input[type=text].RankInput {
     flex-basis: 50px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   span {

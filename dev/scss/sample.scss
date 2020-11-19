@@ -1232,6 +1232,7 @@ h3.ui-accordion-header {
   .LabelWrapper {
     display: inline-flex;
     align-items: center;
+    width: auto !important;
 
     label {
       padding-right: 20px;

@@ -1221,6 +1221,7 @@ h3.ui-accordion-header {
   padding-right: 20px; }
 
 .ChoiceStructure .LabelWrapper .TextEntryBox {
-  height: auto; }
+  height: auto;
+  margin-top: 20px; }
 
 /* end of Rubber Cheese overrides */

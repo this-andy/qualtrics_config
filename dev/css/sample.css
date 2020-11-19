@@ -1206,37 +1206,21 @@ h3.ui-accordion-header {
   list-style-type: circle; }
 
 .ChoiceStructure li {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  vertical-align: middle;
+  display: block; }
 
 .ChoiceStructure input[type=text].RankInput {
-  -webkit-flex-basis: 50px;
-  -ms-flex-preferred-size: 50px;
-  flex-basis: 50px;
+  width: 70px !important;
   padding-left: 0 !important;
   padding-right: 0 !important; }
 
 .ChoiceStructure span {
   padding-left: 10px; }
 
-.ChoiceStructure .LabelWrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .ChoiceStructure .LabelWrapper label {
-    padding-right: 20px; }
-  .ChoiceStructure .LabelWrapper .TextEntryBox {
-    height: auto; }
+.ChoiceStructure .LabelWrapper label {
+  padding-right: 20px; }
+
+.ChoiceStructure .LabelWrapper .TextEntryBox {
+  height: auto; }
 
 /* end of Rubber Cheese overrides */

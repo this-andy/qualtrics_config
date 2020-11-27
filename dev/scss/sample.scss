@@ -1216,7 +1216,7 @@ h3.ui-accordion-header {
 .ChoiceStructure {
   li {
     vertical-align: middle;
-    display: block;
+    display: flex;
   }
 
   input[type=text].RankInput {

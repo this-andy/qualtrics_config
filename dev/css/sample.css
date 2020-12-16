@@ -119,13 +119,13 @@ body#SurveyEngineBody {
     .Skin .DB .QuestionText h2 {
       font-size: 24px;
       font-weight: bold; }
-    .Skin .DB .QuestionText h3 {
+    .Skin .DB .QuestionText h3:not(.ui-accordion-header) {
       color: #3a3c42;
       font-size: 16px;
       font-weight: bold;
       line-height: 1.63;
       margin: 0 0 20px 0; }
-      .Skin .DB .QuestionText h3:last-child {
+      .Skin .DB .QuestionText h3:not(.ui-accordion-header):last-child {
         margin-bottom: 0; }
     .Skin .DB .QuestionText p {
       color: #3a3c42;

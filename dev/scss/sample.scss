@@ -172,7 +172,7 @@ body#SurveyEngineBody {
         font-weight: bold;
       }
 
-      h3 {
+      h3:not(.ui-accordion-header) {
         color: $color-black;
         font-size: 16px;
         font-weight: bold;
